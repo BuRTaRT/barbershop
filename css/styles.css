@@ -41,7 +41,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -53,12 +53,17 @@ nav {
     font-weight: bold;
     color: #d4af37;
     text-transform: uppercase;
+    height: 90px;
 }
-
+.logo img{
+     height: 100%;
+}
 .nav-links {
     display: flex;
     gap: 30px;
     list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-links a {
