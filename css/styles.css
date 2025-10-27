@@ -685,6 +685,9 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .booking-box{
+        text-align: center;
+    }
     .nav-links {
         display: none;
     }
@@ -695,6 +698,7 @@ footer {
 
     .hero-content h1 {
         font-size: 32px;
+        margin-top: 25px;
     }
 
     .hero-content h2 {
