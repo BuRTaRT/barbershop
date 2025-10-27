@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -18,7 +18,8 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-.btn-booking{
+
+.btn-booking {
     padding: 10px 20px;
     background-color: #d4af37;
     display: inline-block;
@@ -29,11 +30,12 @@ body {
 
 
 }
+
 /* Header */
 header {
     position: fixed;
     width: 100%;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(10, 10, 10, 0.8);
     padding: 5px 0;
     z-index: 1000;
     border-bottom: 1px solid #333;
@@ -55,9 +57,50 @@ nav {
     text-transform: uppercase;
     height: 90px;
 }
-.logo img{
-     height: 100%;
+
+.mobile-logo {
+    height: 120px;
 }
+
+.logo img {
+    height: 100%;
+}
+.mobile-logo-hero{
+    display: none;
+}
+@media (max-width: 768px) {
+    nav {
+        justify-content: right;
+        position: relative;
+    }
+
+    header {
+        background-color: transparent;
+        border-bottom: 0;
+    }
+
+    .mobile-menu {
+    align-items: center;
+    }
+    .mobile-logo-hero{
+        display: block;
+        height: 200px;
+    }
+    .hero{
+        align-items: start !important;
+        background-position: 56% 10% !important;
+
+    }
+    .mobile-nav{
+        justify-content: start;
+    }
+    .mobile-menu{
+        position: absolute;
+        top: 65px;
+        right: 50px;
+    }
+}
+
 .nav-links {
     display: flex;
     gap: 30px;
@@ -116,7 +159,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     transition: right 0.4s ease;
 }
 
@@ -332,6 +375,9 @@ nav {
     padding: 80px 0;
     background: #0f0f0f;
 }
+.schedule-info{
+    text-align: center;
+}
 
 .schedule-content {
     display: grid;
@@ -346,6 +392,7 @@ nav {
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #d4af37;
+
 }
 
 .schedule-info p {
@@ -386,7 +433,7 @@ textarea {
 /* Stats */
 .stats {
     padding: 80px 0;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23111" width="1200" height="600"/></svg>');
 }
 
@@ -465,7 +512,7 @@ textarea {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.95), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
     padding: 30px 20px;
     transform: translateY(100%);
     transition: transform 0.4s;
