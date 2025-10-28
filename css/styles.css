@@ -768,6 +768,9 @@ footer {
         top: 0;
         right: 0;
     }
+    .mob-btn{
+        animation: btnPulse 5s ease-in-out infinite;
+    }
 }
 
 @keyframes btnPulse {
