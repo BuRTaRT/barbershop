@@ -24,7 +24,7 @@
 }
 @font-face {
     font-family: 'variant_1';
-    src: url('../fonts/3438-font.ttf');
+    src: url('../fonts/3229-font.ttf');
     font-weight: normal;
     font-style: normal;
     /*Laverna Deco*/
@@ -52,10 +52,18 @@
 }
 @font-face {
     font-family: 'variant_5';
-    src: url('../fonts/72-font.otf');
+    src: url('../fonts/3355-font.ttf');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'variant_6';
+    src: url('../fonts/3441-font.ttf');
+    font-weight: normal;
+    font-style: normal;
+    /*Lunapolis*/
+}
+
 @font-face {
     font-family: 'variant_7';
     src: url('../fonts/2409-font.ttf');
@@ -63,13 +71,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'variant_6';
-    src: url('../fonts/119-font.otf');
-    font-weight: normal;
-    font-style: normal;
-    /*Lunapolis*/
-}
+
 @font-face {
     font-family: 'variant_8';
     src: url('../fonts/2935-font.ttf');
@@ -94,6 +96,13 @@
 @font-face {
     font-family: 'variant_11';
     src: url('../fonts/3435-font.ttf');
+    font-weight: normal;
+    font-style: normal;
+    /*Lunapolis*/
+}
+@font-face {
+    font-family: 'variant_12';
+    src: url('../fonts/3510-font.ttf');
     font-weight: normal;
     font-style: normal;
     /*Lunapolis*/
