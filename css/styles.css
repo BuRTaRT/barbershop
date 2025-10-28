@@ -65,9 +65,11 @@ nav {
 .logo img {
     height: 100%;
 }
-.mobile-logo-hero{
+
+.mobile-logo-hero {
     display: none;
 }
+
 @media (max-width: 768px) {
     nav {
         justify-content: right;
@@ -80,21 +82,25 @@ nav {
     }
 
     .mobile-menu {
-    align-items: center;
+        align-items: center;
     }
-    .mobile-logo-hero{
+
+    .mobile-logo-hero {
         display: block;
         height: 200px;
     }
-    .hero{
+
+    .hero {
         align-items: start !important;
         background-position: 56% 10% !important;
 
     }
-    .mobile-nav{
+
+    .mobile-nav {
         justify-content: start;
     }
-    .mobile-menu{
+
+    .mobile-menu {
         position: absolute;
         top: 75px;
         right: 35px;
@@ -258,7 +264,7 @@ nav {
 /* Section Title */
 .section-title {
     text-align: center;
-    margin: 80px 0 60px;
+    margin: 40px 0 20px;
 }
 
 .section-title::before,
@@ -375,7 +381,8 @@ nav {
     padding: 80px 0;
     background: #0f0f0f;
 }
-.schedule-info{
+
+.schedule-info {
     text-align: center;
 }
 
@@ -447,6 +454,8 @@ textarea {
 
 .stat-item {
     padding: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
 }
 
 .stat-icon {
@@ -470,7 +479,7 @@ textarea {
 
 /* Portfolio */
 .portfolio {
-    padding: 80px 0;
+    padding: 80px 0 40px;
     background: #0a0a0a;
     overflow: hidden;
 }
@@ -514,13 +523,10 @@ textarea {
     right: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
     padding: 30px 20px;
-    transform: translateY(100%);
+    /*transform: translateY(100%);*/
     transition: transform 0.4s;
 }
 
-.portfolio-card:hover .portfolio-card-overlay {
-    transform: translateY(0);
-}
 
 .portfolio-card h4 {
     font-size: 24px;
@@ -607,7 +613,7 @@ textarea {
 /* Testimonials */
 .testimonials {
     padding: 80px 0;
-    background: #0f0f0f;
+    background: black;
 }
 
 .testimonial {
@@ -620,8 +626,9 @@ textarea {
     font-size: 18px;
     font-style: italic;
     color: #ccc;
-    margin-bottom: 20px;
     line-height: 1.8;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .testimonial-author {
@@ -637,7 +644,7 @@ textarea {
 
 /* Footer */
 footer {
-    background: #000;
+    background: #0f0f0f;
     padding: 60px 0 30px;
     text-align: center;
 }
@@ -685,9 +692,14 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .booking-box{
+    .portfolio-card-img{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .booking-box {
         text-align: center;
     }
+
     .nav-links {
         display: none;
     }
@@ -731,4 +743,46 @@ footer {
     .nav-links {
         display: none !important;
     }
+}
+
+.appointment {
+    position: absolute;
+    right: 10%;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    animation: btnPulse 8s ease-in-out infinite;
+}
+@media(max-width: 1150px){
+    .appointment {
+     right: 1%;
+    }
+}
+@media(max-width: 830px){
+    .appointment {
+        display: none;
+    }
+    .mobile-btn{
+        display: block !important;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
+@keyframes btnPulse {
+    0%, 50%, 100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    60% {
+        transform: scale(1.08);
+        box-shadow: 0 0 15px 3px rgba(212, 175, 55, 0.4);
+    }
+}
+
+/* Применяем к кнопке */
+.appointment{
+    animation: btnPulse 3s ease-in-out infinite;
+
 }

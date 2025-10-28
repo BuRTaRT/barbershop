@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MenZ Salon - Класична чоловіча зачіска та гоління</title>
+    <title>Old School Barber - Класична чоловіча зачіска та гоління</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/Logo_transparent.png" type="image/x-icon">
 </head>
 <body>
 <!-- Header -->
@@ -14,37 +15,33 @@
         <ul class="nav-links">
             <li><a href="#home">Головна</a></li>
             <li><a href="#services">Послуги</a></li>
-            <div class="logo"><img  src="./img/Logo_transparent.png" alt="" srcset=""></div>
+            <div class="logo"><img src="./img/Logo_transparent.png" alt=""></div>
             <li><a href="#portfolio">Роботи</a></li>
-            <!--            <li><a href="#stylists">Майстри</a></li>-->
-<!--            <li><a href="#manicure">Манікюр</a></li>-->
             <li><a href="#contact">Контакти</a></li>
         </ul>
+        <a class="appointment btn" href="#schedule">Записатись</a>
         <div class="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </div>
     </nav>
 </header>
 
 <!-- Mobile Navigation -->
 <div class="mobile-nav">
-    <div class="logo mobile-logo"><img  src="./img/Logo_transparent.png" alt="" srcset=""></div>
+    <div class="logo mobile-logo"><img src="./img/Logo_transparent.png" alt=""></div>
     <div class="close-menu"></div>
     <a href="#home">Головна</a>
     <a href="#services">Послуги</a>
     <a href="#portfolio">Роботи</a>
-<!--    <a href="#stylists">Майстри</a>-->
-<!--    <a href="#manicure">Манікюр</a>-->
     <a href="#schedule">Розклад</a>
     <a href="#contact">Контакти</a>
+    <a class="appointment btn mobile-btn" href="#schedule">Записатись</a>
 </div>
 
 <!-- Hero Section -->
 <section class="hero" id="home">
     <div class="hero-content">
-        <div class="logo mobile-logo-hero"><img  src="./img/Logo_transparent.png" alt="" srcset=""></div>
+        <div class="logo mobile-logo-hero"><img src="./img/Logo_transparent.png" alt=""></div>
         <h1>НАШІ ЗАЧІСКИ</h1>
         <h2>ПОКРАЩУЮТЬ ВАШУ ПОСМІШКУ</h2>
         <a href="#schedule" class="btn">Записатись</a>
@@ -62,60 +59,26 @@
             <div class="service-card">
                 <div class="service-icon">✂</div>
                 <h3>Стрижка</h3>
-                <p>Класичні та сучасні чоловічі стрижки від досвідчених майстрів. Індивідуальний підхід до кожного
-                    клієнта.</p>
+                <p>Класичні та сучасні чоловічі стрижки від досвідчених майстрів.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">✄</div>
                 <h3>Оформлення Бороди</h3>
-                <p>Професійне підстригання та моделювання бороди. Створимо ідеальну форму для вашого обличчя.</p>
+                <p>Професійне підстригання та моделювання бороди.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">💈</div>
                 <h3>Фарбування</h3>
-                <p>Якісне фарбування волосся з використанням преміальних засобів. Природний результат гарантовано.</p>
+                <p>Якісне фарбування волосся з преміальними засобами.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">🪒</div>
                 <h3>Гоління</h3>
-                <p>Класичне гоління небезпечною бритвою з використанням гарячих рушників та преміум косметики.</p>
+                <p>Класичне гоління небезпечною бритвою з гарячими рушниками.</p>
             </div>
         </div>
     </div>
 </section>
-
-<!-- Stylists -->
-<!--<section class="stylists" id="stylists">-->
-<!--    <div class="container">-->
-<!--        <div class="section-title">-->
-<!--            <h2>Експертні <span class="highlight">Стилісти</span></h2>-->
-<!--            <p>Наша команда професіоналів готова зробити ваш образ ідеальним</p>-->
-<!--        </div>-->
-<!--        <div class="stylists-grid">-->
-<!--            <div class="stylist-card">-->
-<!--                <div class="stylist-img">👨</div>-->
-<!--                <div class="stylist-info">-->
-<!--                    <h3>Павло Нікольс</h3>-->
-<!--                    <p>Головний барбер</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="stylist-card">-->
-<!--                <div class="stylist-img">👨‍💼</div>-->
-<!--                <div class="stylist-info">-->
-<!--                    <h3>Сергій Пік</h3>-->
-<!--                    <p>Барбер-стиліст</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="stylist-card">-->
-<!--                <div class="stylist-img">🧔</div>-->
-<!--                <div class="stylist-info">-->
-<!--                    <h3>Павло Дос Рейс</h3>-->
-<!--                    <p>Майстер з бороди</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 
 <!-- Portfolio -->
 <section class="portfolio" id="portfolio">
@@ -129,11 +92,10 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="portfolio-card">
-                        <div class="portfolio-card-img"
-                             style="background-image:url('./img/crop.png');">
+                        <div class="portfolio-card-img" style="background-image:url('./img/crop.png');">
                             <div class="portfolio-card-overlay">
-                                <h4>Класичний Crop</h4>
-                                <p>Стрижка: Crop</p>
+                                <h4>Класичний Кроп</h4>
+                                <p>Стрижка: Кроп</p>
                                 <p>Стиль: Текстурований топ</p>
                                 <p>Час: 45 хв</p>
                             </div>
@@ -142,20 +104,10 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="portfolio-card">
-                        <div class="portfolio-card-img" style="background-image: url('./img/Textured-cropp.png');">
+                        <div class="portfolio-card-img" style="background-image:url('./img/fade.png');">
                             <div class="portfolio-card-overlay">
-                                <h4>Textured cropp</h4>
-                                <p>Час: 30 хв</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="portfolio-card">
-                        <div class="portfolio-card-img" style="background-image:url('./img/kviff-2.png')">
-                            <div class="portfolio-card-overlay">
-                                <h4>Квифф</h4>
-                                <p>Стрижка: Квифф</p>
+                                <h4>Фейд</h4>
+                                <p>Стрижка: Фейд</p>
                                 <p>Борода: Повне оформлення</p>
                                 <p>Час: 60 хв</p>
                             </div>
@@ -164,7 +116,31 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="portfolio-card">
-                        <div class="portfolio-card-img" style="background-image: url('./img/pompadur.png')">
+                        <div class="portfolio-card-img" style="background-image:url('./img/Textured-cropp.png');">
+                            <div class="portfolio-card-overlay">
+                                <h4>Текстурний Кропп</h4>
+                                <p>Стрижка: Cropp</p>
+                                <p>Борода: Без оформлення</p>
+                                <p>Час: 60 хв</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img" style="background-image:url('./img/kviff-2.png');">
+                            <div class="portfolio-card-overlay">
+                                <h4>Квіфф</h4>
+                                <p>Стрижка: Квіфф</p>
+                                <p>Борода: Без оформлення</p>
+                                <p>Час: 60 хв</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img" style="background-image:url('./img/pompadur.png');">
                             <div class="portfolio-card-overlay">
                                 <h4>Помпадур</h4>
                                 <p>Стрижка: Класика</p>
@@ -174,11 +150,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+
+            <div class="portfolio-next swiper-button-next"></div>
+            <div class="portfolio-prev swiper-button-prev"></div>
+            <div class="portfolio-pagination swiper-pagination"></div>
         </div>
     </div>
 </section>
@@ -227,13 +203,12 @@
                 <p><strong>Понеділок - П'ятниця:</strong> 20:00</p>
                 <p><strong>Неділя:</strong> Вихідний</p>
                 <br><br>
-                <p style="color: #999; font-size: 14px;">Записуйтесь онлайн через нашу систему бронювання та отримайте
-                    знижку 10% на перший візит!</p>
+                <p style="color:#999;font-size:14px;">Записуйтесь онлайн та отримайте знижку 10%!</p>
             </div>
             <div class="booking-box">
                 <div class="booking-icon">📅</div>
                 <h3>Онлайн Запис</h3>
-                <p>Оберіть зручний час та майстра всього за кілька кліків</p>
+                <p>Оберіть зручний час та майстра</p>
                 <a href="https://example.com/booking" target="_blank" class="btn-booking">
                     <span>Записатись Онлайн</span>
                     <span class="arrow">→</span>
@@ -243,69 +218,41 @@
     </div>
 </section>
 
-<!-- Manicure Section -->
-<!--<section class="manicure" id="manicure">-->
-<!--    <div class="container">-->
-<!--        <div class="section-title">-->
-<!--            <h2>Чоловічий <span class="highlight">Манікюр</span></h2>-->
-<!--            <p>Професійний догляд за руками та нігтями</p>-->
-<!--        </div>-->
-<!--        <div class="manicure-content">-->
-<!--            <div class="manicure-info">-->
-<!--                <h3>Наші послуги манікюру</h3>-->
-<!--                <div class="manicure-service">-->
-<!--                    <div class="manicure-service-header">-->
-<!--                        <h4>💅 Класичний манікюр</h4>-->
-<!--                        <span class="price">350 грн</span>-->
-<!--                    </div>-->
-<!--                    <p>Обрізання, підпилювання, полірування нігтів. Догляд за кутикулою.</p>-->
-<!--                </div>-->
-<!--                <div class="manicure-service">-->
-<!--                    <div class="manicure-service-header">-->
-<!--                        <h4>✨ SPA-манікюр</h4>-->
-<!--                        <span class="price">550 грн</span>-->
-<!--                    </div>-->
-<!--                    <p>Комплексний догляд з пілінгом, масажем рук та зволожуючою маскою.</p>-->
-<!--                </div>-->
-<!--                <div class="manicure-service">-->
-<!--                    <div class="manicure-service-header">-->
-<!--                        <h4>🛡️ Гігієнічний манікюр</h4>-->
-<!--                        <span class="price">300 грн</span>-->
-<!--                    </div>-->
-<!--                    <p>Базовий догляд за нігтями та шкірою рук для чоловіків.</p>-->
-<!--                </div>-->
-<!--                <div class="manicure-service">-->
-<!--                    <div class="manicure-service-header">-->
-<!--                        <h4>💎 Преміум догляд</h4>-->
-<!--                        <span class="price">750 грн</span>-->
-<!--                    </div>-->
-<!--                    <p>Розкішний догляд з парафінотерапією та преміум косметикою.</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="booking-box">-->
-<!--                <div class="booking-icon">💅</div>-->
-<!--                <h3>Запис на Манікюр</h3>-->
-<!--                <p>Професійний догляд за вашими руками від досвідчених майстрів</p>-->
-<!--                <a href="https://example.com/manicure-booking" target="_blank" class="btn-booking">-->
-<!--                    <span>Записатись на Манікюр</span>-->
-<!--                    <span class="arrow">→</span>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
 <!-- Testimonials -->
 <section class="testimonials">
     <div class="container">
         <div class="section-title">
             <h2>Задоволені <span class="highlight">Клієнти</span></h2>
         </div>
-        <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p>Я був задоволений від самого моменту, як зайшов в салон. Найкращий сервіс в місті! Я отримав дуже якісну
-                стрижку та гоління. Вони використовують найкращі продукти. Я обов'язково повернусь знову!</p>
-            <div class="testimonial-author">Авраам</div>
+        <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>“Вперше був у цьому барбершопі — атмосфера просто топ! Майстер Олександр зробив ідеальну
+                            стрижку, врахував форму голови й тип волосся. Видно, що людина знає свою справу. Тепер
+                            тільки сюди!”</p>
+                        <div class="testimonial-author">Андрій</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>“Сервіс на рівні, стиль — бездоганний. Дуже сподобалось, як оформили бороду, тепер дружина в захваті. Дякую майстру Максу!”</p>
+                        <div class="testimonial-author">Віталій</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>“Зайшов випадково — вийшов новою людиною 😎. Навіть барбер пожартував, що тепер мені треба новий паспорт, бо на фото вже не схожий.”</p>
+                        <div class="testimonial-author">Дмитро</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-next swiper-button-next"></div>
+            <div class="testimonial-prev swiper-button-prev"></div>
+            <div class="testimonial-pagination swiper-pagination"></div>
         </div>
     </div>
 </section>
@@ -313,74 +260,57 @@
 <!-- Footer -->
 <footer id="contact">
     <div class="container">
-        <div class="logo"><img  src="./img/Logo_transparent.png" alt="" srcset=""></div>
+        <div class="logo"><img src="./img/Logo_transparent.png" alt=""></div>
         <div class="footer-info">
             <p><strong>Телефон:</strong> +380 (XX) XXX-XX-XX</p>
             <p><strong>Email:</strong> info@oldschoolbarber.com</p>
             <p><strong>Адреса:</strong> вул. Хрещатик 1, Київ</p>
         </div>
         <div class="social-links">
-            <a href="#">f</a>
-            <a href="#">t</a>
-            <a href="#">in</a>
-            <a href="#">g+</a>
-            <a href="#">y</a>
+            <a href="#">f</a><a href="#">t</a><a href="#">in</a><a href="#">g+</a><a href="#">y</a>
         </div>
-        <p style="margin-top: 40px; color: #666;">© 2025 Old School Barber. Всі права захищені.</p>
+        <p style="margin-top:40px;color:#666;">© 2025 Old School Barber. Всі права захищені.</p>
     </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    // Initialize Swiper
-    const swiper = new Swiper('.portfolioSwiper', {
+    // Portfolio Swiper
+    const portfolioSwiper = new Swiper('.portfolioSwiper', {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        autoplay: {delay: 3000, disableOnInteraction: false},
+        pagination: {el: '.portfolio-pagination', clickable: true},
+        navigation: {nextEl: '.portfolio-next', prevEl: '.portfolio-prev'},
         breakpoints: {
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
+            640: {slidesPerView: 2, spaceBetween: 20},
+            1024: {slidesPerView: 3, spaceBetween: 30},
         },
     });
 
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({behavior: 'smooth', block: 'start'});
-                // Close mobile menu if open
-                document.querySelector('.mobile-nav').classList.remove('active');
-                document.querySelector('.mobile-menu').classList.remove('active');
-            }
-        });
+    // Testimonial Swiper
+    const testimonialSwiper = new Swiper('.testimonialSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {delay: 4000, disableOnInteraction: false},
+        pagination: {el: '.testimonial-pagination', clickable: true},
+        navigation: {nextEl: '.testimonial-next', prevEl: '.testimonial-prev'},
+        breakpoints: {
+            640: {slidesPerView: 1},
+            1024: {slidesPerView: 1},
+        },
     });
 
-    // Form submission
-    document.querySelectorAll('form').forEach(form => {
-        form.addEventListener('submit', function (e) {
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', e => {
             e.preventDefault();
-            alert('Дякуємо за запис! Ми зв\'яжемося з вами найближчим часом.');
-            this.reset();
+            const target = document.querySelector(anchor.getAttribute('href'));
+            if (target) target.scrollIntoView({behavior: 'smooth', block: 'start'});
+            document.querySelector('.mobile-nav').classList.remove('active');
+            document.querySelector('.mobile-menu').classList.remove('active');
         });
     });
 
@@ -390,25 +320,22 @@
     const closeMenuBtn = document.querySelector('.close-menu');
 
     if (mobileMenuBtn && mobileNav && closeMenuBtn) {
-        mobileMenuBtn.addEventListener('click', function (e) {
+        mobileMenuBtn.addEventListener('click', e => {
             e.stopPropagation();
-            console.log('Menu button clicked');
             mobileNav.classList.add('active');
-            this.classList.add('active');
+            mobileMenuBtn.classList.add('active');
             document.body.style.overflow = 'hidden';
         });
 
-        closeMenuBtn.addEventListener('click', function (e) {
+        closeMenuBtn.addEventListener('click', e => {
             e.stopPropagation();
-            console.log('Close button clicked');
             mobileNav.classList.remove('active');
             mobileMenuBtn.classList.remove('active');
             document.body.style.overflow = 'auto';
         });
 
-        // Close menu when clicking on mobile nav links
         document.querySelectorAll('.mobile-nav a').forEach(link => {
-            link.addEventListener('click', function () {
+            link.addEventListener('click', () => {
                 mobileNav.classList.remove('active');
                 mobileMenuBtn.classList.remove('active');
                 document.body.style.overflow = 'auto';
