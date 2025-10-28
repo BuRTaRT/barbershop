@@ -339,6 +339,7 @@ nav {
     font-size: 42px;
     margin-bottom: 10px;
     text-transform: uppercase;
+    padding: 0 10px;
 }
 
 .hero-content h2 {
