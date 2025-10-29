@@ -24,35 +24,35 @@
 }
 @font-face {
     font-family: 'variant_1';
-    src: url('../fonts/3229-font.ttf');
+    src: url('../fonts/Beardsons - Normal.ttf');
     font-weight: normal;
     font-style: normal;
     /*Laverna Deco*/
 }
 @font-face {
     font-family: 'variant_2';
-    src: url('../fonts/3267-font.ttf');
+    src: url('../fonts/caslonantiquerus_.otf');
     font-weight: normal;
     font-style: normal;
     /*Elisabethische*/
 }
 @font-face {
     font-family: 'variant_3';
-    src: url('../fonts/3269-font.ttf');
+    src: url('../fonts/6551-fontps.ttf');
     font-weight: normal;
     font-style: normal;
     /*Packard Modern*/
 }
 @font-face {
     font-family: 'variant_4';
-    src: url('../fonts/3445-font.ttf');
+    src: url('../fonts/breamcatcher rg.otf');
     font-weight: normal;
     font-style: normal;
     /*Lunapolis*/
 }
 @font-face {
     font-family: 'variant_5';
-    src: url('../fonts/3355-font.ttf');
+    src: url('../fonts/Steam-Base.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -96,9 +96,9 @@
 @font-face {
     font-family: 'variant_11';
     src: url('../fonts/3435-font.ttf');
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
-    /*Lunapolis*/
+    /*BroadwayC Inline*/
 }
 @font-face {
     font-family: 'variant_12';
@@ -112,13 +112,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    letter-spacing: 1px;
 
 }
 
 body {
     background-color: #0a0a0a;
     color: #fff;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .container {
@@ -336,18 +337,25 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: 42px;
+    font-size: 33px;
     margin-bottom: 10px;
     text-transform: uppercase;
     padding: 0 10px;
 }
 
 .hero-content h2 {
-    font-size: 25px;
+    font-size: 22px;
     color: #d4af37;
     margin-bottom: 30px;
 }
-
+@media (max-width: 480px) {
+    .hero-content h1{
+        font-size: 22px;
+    }
+    .hero-content h2{
+        font-size: 16px;
+    }
+}
 .hero-content p {
     font-size: 18px;
     margin-bottom: 40px;
@@ -502,7 +510,6 @@ nav {
 .schedule-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
     align-items: center;
     margin-top: 50px;
 }
@@ -822,12 +829,12 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 32px;
-        margin-top: 25px;
+        font-size: 22px;
+        margin-top: 18px;
     }
 
     .hero-content h2 {
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .schedule-content,
