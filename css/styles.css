@@ -111,7 +111,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'variant_12';
     letter-spacing: 1px;
 
 }
@@ -341,12 +341,14 @@ nav {
     margin-bottom: 10px;
     text-transform: uppercase;
     padding: 0 10px;
+    line-height: 1.8;
 }
 
 .hero-content h2 {
     font-size: 22px;
     color: #d4af37;
     margin-bottom: 30px;
+    line-height: 1.8;
 }
 @media (max-width: 480px) {
     .hero-content h1{
