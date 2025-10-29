@@ -341,7 +341,6 @@ nav {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: url("../img/bg.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -939,4 +938,15 @@ footer {
     position: fixed;
     left: 30px;
     top: 65px;
+}
+.lazy-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity .4s ease;
+    will-change: opacity, background-image;
+}
+.lazy-bg.loaded {
+    opacity: 1;
 }
