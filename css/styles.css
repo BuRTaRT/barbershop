@@ -384,6 +384,9 @@ nav {
 .section-title {
     text-align: center;
     margin: 40px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .section-title::before,
@@ -396,7 +399,7 @@ nav {
 }
 
 .section-title h2 {
-    font-size: 36px;
+    font-size: 32px;
     text-transform: uppercase;
     color: #fff;
 }
