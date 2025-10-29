@@ -4,24 +4,28 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Lobster';
     src: url('../fonts/Lobster/Lobster-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'langustine';
     src: url('../fonts/langustine.ttf');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'hyphestmodern';
     src: url('../fonts/HyphestModern.ttf');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'variant_1';
     src: url('../fonts/Beardsons - Normal.ttf');
@@ -29,6 +33,7 @@
     font-style: normal;
     /*Laverna Deco*/
 }
+
 @font-face {
     font-family: 'variant_2';
     src: url('../fonts/caslonantiquerus_.otf');
@@ -36,6 +41,7 @@
     font-style: normal;
     /*Elisabethische*/
 }
+
 @font-face {
     font-family: 'variant_3';
     src: url('../fonts/6551-fontps.ttf');
@@ -43,6 +49,7 @@
     font-style: normal;
     /*Packard Modern*/
 }
+
 @font-face {
     font-family: 'variant_4';
     src: url('../fonts/breamcatcher rg.otf');
@@ -50,12 +57,14 @@
     font-style: normal;
     /*Lunapolis*/
 }
+
 @font-face {
     font-family: 'variant_5';
     src: url('../fonts/Steam-Base.ttf');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'variant_6';
     src: url('../fonts/3441-font.ttf');
@@ -79,6 +88,7 @@
     font-style: normal;
     /*Lunapolis*/
 }
+
 @font-face {
     font-family: 'variant_9';
     src: url('../fonts/3096-font.otf');
@@ -86,6 +96,7 @@
     font-style: normal;
     /*Lunapolis*/
 }
+
 @font-face {
     font-family: 'variant_10';
     src: url('../fonts/3101-font.ttf');
@@ -93,6 +104,7 @@
     font-style: normal;
     /*Lunapolis*/
 }
+
 @font-face {
     font-family: 'variant_11';
     src: url('../fonts/3435-font.ttf');
@@ -100,6 +112,7 @@
     font-style: normal;
     /*BroadwayC Inline*/
 }
+
 @font-face {
     font-family: 'variant_12';
     src: url('../fonts/3510-font.ttf');
@@ -107,6 +120,7 @@
     font-style: normal;
     /*Lunapolis*/
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -350,14 +364,17 @@ nav {
     margin-bottom: 30px;
     line-height: 1.8;
 }
+
 @media (max-width: 480px) {
-    .hero-content h1{
+    .hero-content h1 {
         font-size: 22px;
     }
-    .hero-content h2{
+
+    .hero-content h2 {
         font-size: 16px;
     }
 }
+
 .hero-content p {
     font-size: 18px;
     margin-bottom: 40px;
@@ -513,10 +530,11 @@ nav {
 }
 
 .schedule-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
     margin-top: 50px;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .schedule-info h3 {
@@ -530,6 +548,11 @@ nav {
 .schedule-info p {
     margin-bottom: 10px;
     color: #ccc;
+    font-size: 16px;
+}
+
+.social-icon {
+    height: 30px;
 }
 
 .schedule-form {
@@ -797,33 +820,26 @@ footer {
     margin-top: 30px;
 }
 
-.social-links a {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #d4af37;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #d4af37;
-    text-decoration: none;
-    transition: all 0.3s;
-}
 
-.social-links a:hover {
-    background: #d4af37;
-    color: #000;
+.social-links img {
+    height: 50px;
+    width: 50px;
+}
+.booking-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .portfolio-card-img{
+    .portfolio-card-img {
         width: 95%;
         margin: 0 auto;
     }
-    .booking-box {
-        text-align: center;
-    }
+
+
 
     .nav-links {
         display: none;
@@ -878,22 +894,26 @@ footer {
     padding: 8px 16px;
     animation: btnPulse 8s ease-in-out infinite;
 }
-@media(max-width: 1150px){
+
+@media (max-width: 1150px) {
     .appointment {
-     right: 1%;
+        right: 1%;
     }
 }
-@media(max-width: 830px){
+
+@media (max-width: 830px) {
     .appointment {
         display: none;
     }
-    .mobile-btn{
+
+    .mobile-btn {
         display: block !important;
         position: relative;
         top: 0;
         right: 0;
     }
-    .mob-btn{
+
+    .mob-btn {
         animation: btnPulse 5s ease-in-out infinite;
     }
 }
@@ -910,11 +930,12 @@ footer {
 }
 
 /* Применяем к кнопке */
-.appointment{
+.appointment {
     animation: btnPulse 3s ease-in-out infinite;
 
 }
-#fonts{
+
+#fonts {
     position: fixed;
     left: 30px;
     top: 65px;
