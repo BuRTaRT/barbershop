@@ -6,41 +6,10 @@
 
 
 
-@font-face {
-    font-family: 'Barber';
-    src: url('../fonts/barber/Barber-Fill.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Lobster';
-    src: url('../fonts/Lobster/Lobster-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'langustine';
-    src: url('../fonts/langustine.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'hyphestmodern';
-    src: url('../fonts/HyphestModern.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'variant_1';
-    src: url('../fonts/Beardsons - Normal.ttf');
-    font-weight: normal;
-    font-style: normal;
-    /*Laverna Deco*/
-}
 
 @font-face {
     font-family: 'variant_2';
@@ -50,76 +19,7 @@
     /*Elisabethische*/
 }
 
-@font-face {
-    font-family: 'variant_3';
-    src: url('../fonts/6551-fontps.ttf');
-    font-weight: normal;
-    font-style: normal;
-    /*Packard Modern*/
-}
 
-@font-face {
-    font-family: 'variant_4';
-    src: url('../fonts/breamcatcher rg.otf');
-    font-weight: normal;
-    font-style: normal;
-    /*Lunapolis*/
-}
-
-@font-face {
-    font-family: 'variant_5';
-    src: url('../fonts/Steam-Base.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'variant_6';
-    src: url('../fonts/3441-font.ttf');
-    font-weight: normal;
-    font-style: normal;
-    /*Lunapolis*/
-}
-
-@font-face {
-    font-family: 'variant_7';
-    src: url('../fonts/2409-font.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'variant_8';
-    src: url('../fonts/2935-font.ttf');
-    font-weight: normal;
-    font-style: normal;
-    /*Lunapolis*/
-}
-
-@font-face {
-    font-family: 'variant_9';
-    src: url('../fonts/3096-font.otf');
-    font-weight: normal;
-    font-style: normal;
-    /*Lunapolis*/
-}
-
-@font-face {
-    font-family: 'variant_10';
-    src: url('../fonts/3101-font.ttf');
-    font-weight: normal;
-    font-style: normal;
-    /*Lunapolis*/
-}
-
-@font-face {
-    font-family: 'variant_11';
-    src: url('../fonts/3435-font.ttf');
-    font-weight: 100;
-    font-style: normal;
-    /*BroadwayC Inline*/
-}
 
 @font-face {
     font-family: 'variant_12';
