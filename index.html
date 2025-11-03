@@ -487,7 +487,9 @@
         await minTime;
 
         // 4️⃣ скрываем прелоадер
-        hidePreloader();
+        setTimeout(()=>{
+            hidePreloader();
+        },200)
     });
 </script>
 <script>
