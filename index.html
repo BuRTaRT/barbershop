@@ -46,6 +46,14 @@
 <!--</select>-->
 <!-- Header -->
 <div class="content" id="content" style="display:none;">
+    <div class="toggle-wrapper">
+        <a href="/index.html" class="toggle-option left">Барбершоп</a>
+        <div class="toggle-button">
+            <input type="checkbox" id="site-toggle">
+            <label for="site-toggle"></label>
+        </div>
+        <a href="/manicure/index.html" class="toggle-option right">Манікюр</a>
+    </div>
     <header>
         <nav>
             <ul class="nav-links">
@@ -465,7 +473,7 @@
     window.addEventListener("load", async () => {
         // 1️⃣ ждём картинки (включая фоны)
         await new Promise(resolve => {
-            imagesLoaded(document.body, { background: true }, resolve);
+            imagesLoaded(document.body, {background: true}, resolve);
         });
 
         // 2️⃣ ждём шрифты
@@ -482,6 +490,23 @@
         hidePreloader();
     });
 </script>
+<script>
+    const toggle = document.getElementById('site-toggle');
 
+    // если мы на странице маникюра, отмечаем тумблер
+    if (location.pathname.includes('./manicure')) {
+        toggle.checked = true;
+    } else if (!location.pathname.includes('./manicure')) {
+        toggle.checked = false;
+    }
+
+    toggle.addEventListener('change', () => {
+        if (toggle.checked) {
+            window.location.href = './manicure/index.html';
+        } else {
+            window.location.href = './index.html';
+        }
+    });
+</script>
 </body>
 </html>
