@@ -14,8 +14,21 @@
     <meta property="og:url" content="https://oldschool-barber.com">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="uk_UA">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+
 </head>
 <body>
+<div id="preloader">
+    <dotlottie-player
+            src="./Barber.json"
+            speed="1"
+            style="width: 500px; height: 500px;"
+            loop
+            autoplay>
+    </dotlottie-player>
+</div>
 <!--<select style="z-index: 10000" id="fonts">-->
 <!--    <option value="sans-serif">sans-serif</option>-->
 <!--    <option value="variant_1">variant_1</option>-->
@@ -32,210 +45,211 @@
 <!--    <option value="variant_12">variant_12</option>-->
 <!--</select>-->
 <!-- Header -->
-<header>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#home">Головна</a></li>
-            <li><a href="#services">Послуги</a></li>
-            <div class="logo"><img src="./img/Logo_transparent.png" alt=""></div>
-            <li><a href="#portfolio">Роботи</a></li>
-            <li><a href="#contact">Контакти</a></li>
-        </ul>
-        <a class="appointment btn" target="_blank" href="https://n1394531.alteg.io">Записатись</a>
-        <div class="mobile-menu">
-            <span></span><span></span><span></span>
-        </div>
-    </nav>
-</header>
+<div class="content" id="content" style="display:none;">
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <div class="logo"><img src="./img/Logo_transparent.png" alt=""></div>
+                <li><a href="#portfolio">Роботи</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+            <a class="appointment btn" target="_blank" href="https://n1394531.alteg.io">Записатись</a>
+            <div class="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
 
-<!-- Mobile Navigation -->
-<div class="mobile-nav">
-    <div class="logo mobile-logo"><img src="./img/Logo_transparent.png" alt=""></div>
-    <div class="close-menu"></div>
-    <a href="#home">Головна</a>
-    <a href="#services">Послуги</a>
-    <a href="#portfolio">Роботи</a>
-    <a href="#schedule">Розклад</a>
-    <a href="#contact">Контакти</a>
-    <a class="appointment btn mobile-btn" target="_blank" href="https://n1394531.alteg.io">Записатись</a>
-</div>
-
-<!-- Hero Section -->
-<section class="hero lazy-bg" data-bg="url('./img/bg.png')" id="home">
-    <div class="hero-content"  data-aos="fade-up">
-        <div class="logo mobile-logo-hero"><img src="./img/Logo_transparent.png" alt=""></div>
-        <h1>“Стрижем, як колись. Живем, як легенди.”</h1>
-        <h2> Cut like old times. Live like legends.</h2>
-        <a href="https://n1394531.alteg.io" target="_blank" class="btn mob-btn">Записатись</a>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="logo mobile-logo"><img src="./img/Logo_transparent.png" alt=""></div>
+        <div class="close-menu"></div>
+        <a href="#home">Головна</a>
+        <a href="#services">Послуги</a>
+        <a href="#portfolio">Роботи</a>
+        <a href="#schedule">Розклад</a>
+        <a href="#contact">Контакти</a>
+        <a class="appointment btn mobile-btn" target="_blank" href="https://n1394531.alteg.io">Записатись</a>
     </div>
-</section>
 
-<!-- Services -->
-<section class="services" id="services">
-    <div class="container">
-        <div data-aos="fade-up" class="section-title">
-            <h2>Популярні <span class="highlight">Послуги</span></h2>
-            <p>Професійний догляд для справжніх чоловіків</p>
+    <!-- Hero Section -->
+    <section class="hero lazy-bg" data-bg="url('./img/bg.png')" id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="logo mobile-logo-hero"><img src="./img/Logo_transparent.png" alt=""></div>
+            <h1>“Стрижем, як колись. Живем, як легенди.”</h1>
+            <h2> Cut like old times. Live like legends.</h2>
+            <a href="https://n1394531.alteg.io" target="_blank" class="btn mob-btn">Записатись</a>
         </div>
-        <div class="services-grid" data-aos="fade-up">
-            <div class="service-card" data-aos="fade-up">
-                <div class="service-icon">✂</div>
-                <h3>Стрижка</h3>
-                <p>Класичні та сучасні чоловічі стрижки від досвідчених майстрів.</p>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div data-aos="fade-up" class="section-title">
+                <h2>Популярні <span class="highlight">Послуги</span></h2>
+                <p>Професійний догляд для справжніх чоловіків</p>
             </div>
-            <div class="service-card" data-aos="fade-up">
-                <div class="service-icon">✄</div>
-                <h3>Оформлення Бороди</h3>
-                <p>Професійне підстригання та моделювання бороди.</p>
-            </div>
-            <div class="service-card" data-aos="fade-up">
-                <div class="service-icon"><img src="./img/beard.png" height="60px" alt="beard"></div>
-                <h3>Моделювання бороди</h3>
-                <p>Якісне моделювання бороди з преміальними засобами.</p>
-            </div>
-            <div class="service-card" data-aos="fade-up">
-                <div class="service-icon"><img src="./img/britva.png" height="60px" alt="britva">
+            <div class="services-grid" data-aos="fade-up">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">✂</div>
+                    <h3>Стрижка</h3>
+                    <p>Класичні та сучасні чоловічі стрижки від досвідчених майстрів.</p>
                 </div>
-                <h3>Гоління</h3>
-                <p>Класичне гоління небезпечною бритвою з гарячими рушниками.</p>
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">✄</div>
+                    <h3>Оформлення Бороди</h3>
+                    <p>Професійне підстригання та моделювання бороди.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><img src="./img/beard.png" height="60px" alt="beard"></div>
+                    <h3>Моделювання бороди</h3>
+                    <p>Якісне моделювання бороди з преміальними засобами.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><img src="./img/britva.png" height="60px" alt="britva">
+                    </div>
+                    <h3>Гоління</h3>
+                    <p>Класичне гоління небезпечною бритвою з гарячими рушниками.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Portfolio -->
-<!--<section class="portfolio" id="portfolio" data-aos="fade-up">-->
-<!--    <div class="container">-->
-<!--        <div class="section-title" data-aos="fade-up">-->
-<!--            <h2>Наші <span class="highlight">Роботи</span></h2>-->
-<!--            <p>Перегляньте приклади  найкращих робіт</p>-->
-<!--        </div>-->
+    <!-- Portfolio -->
+    <!--<section class="portfolio" id="portfolio" data-aos="fade-up">-->
+    <!--    <div class="container">-->
+    <!--        <div class="section-title" data-aos="fade-up">-->
+    <!--            <h2>Наші <span class="highlight">Роботи</span></h2>-->
+    <!--            <p>Перегляньте приклади  найкращих робіт</p>-->
+    <!--        </div>-->
 
-<!--        <div class="swiper portfolioSwiper">-->
-<!--            <div class="swiper-wrapper">-->
-<!--                <div class="swiper-slide">-->
-<!--                    <div class="portfolio-card">-->
-<!--                        <div class="portfolio-card-img lazy-bg" data-bg="url(./img/crop.png)">-->
-<!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
-<!--                                <h4>Класичний Кроп</h4>-->
-<!--                                <p>Стрижка: Кроп</p>-->
-<!--                                <p>Стиль: Текстурований топ</p>-->
-<!--                                <p>Час: 45 хв</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="swiper-slide">-->
-<!--                    <div class="portfolio-card">-->
-<!--                        <div class="portfolio-card-img lazy-bg" data-bg="url(./img/fade.png)">-->
-<!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
-<!--                                <h4>Фейд</h4>-->
-<!--                                <p>Стрижка: Фейд</p>-->
-<!--                                <p>Борода: Повне оформлення</p>-->
-<!--                                <p>Час: 60 хв</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="swiper-slide">-->
-<!--                    <div class="portfolio-card">-->
-<!--                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/Textured-cropp.png')">-->
-<!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
-<!--                                <h4>Текстурний Кропп</h4>-->
-<!--                                <p>Стрижка: Cropp</p>-->
-<!--                                <p>Борода: Без оформлення</p>-->
-<!--                                <p>Час: 60 хв</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="swiper-slide">-->
-<!--                    <div class="portfolio-card">-->
-<!--                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/kviff-2.png')">-->
-<!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
-<!--                                <h4>Квіфф</h4>-->
-<!--                                <p>Стрижка: Квіфф</p>-->
-<!--                                <p>Борода: Без оформлення</p>-->
-<!--                                <p>Час: 60 хв</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="swiper-slide">-->
-<!--                    <div class="portfolio-card">-->
-<!--                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/pompadur.png')">-->
-<!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
-<!--                                <h4>Помпадур</h4>-->
-<!--                                <p>Стрижка: Класика</p>-->
-<!--                                <p>Стиль: Ретро помпадур</p>-->
-<!--                                <p>Час: 50 хв</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+    <!--        <div class="swiper portfolioSwiper">-->
+    <!--            <div class="swiper-wrapper">-->
+    <!--                <div class="swiper-slide">-->
+    <!--                    <div class="portfolio-card">-->
+    <!--                        <div class="portfolio-card-img lazy-bg" data-bg="url(./img/crop.png)">-->
+    <!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
+    <!--                                <h4>Класичний Кроп</h4>-->
+    <!--                                <p>Стрижка: Кроп</p>-->
+    <!--                                <p>Стиль: Текстурований топ</p>-->
+    <!--                                <p>Час: 45 хв</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="swiper-slide">-->
+    <!--                    <div class="portfolio-card">-->
+    <!--                        <div class="portfolio-card-img lazy-bg" data-bg="url(./img/fade.png)">-->
+    <!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
+    <!--                                <h4>Фейд</h4>-->
+    <!--                                <p>Стрижка: Фейд</p>-->
+    <!--                                <p>Борода: Повне оформлення</p>-->
+    <!--                                <p>Час: 60 хв</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="swiper-slide">-->
+    <!--                    <div class="portfolio-card">-->
+    <!--                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/Textured-cropp.png')">-->
+    <!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
+    <!--                                <h4>Текстурний Кропп</h4>-->
+    <!--                                <p>Стрижка: Cropp</p>-->
+    <!--                                <p>Борода: Без оформлення</p>-->
+    <!--                                <p>Час: 60 хв</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="swiper-slide">-->
+    <!--                    <div class="portfolio-card">-->
+    <!--                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/kviff-2.png')">-->
+    <!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
+    <!--                                <h4>Квіфф</h4>-->
+    <!--                                <p>Стрижка: Квіфф</p>-->
+    <!--                                <p>Борода: Без оформлення</p>-->
+    <!--                                <p>Час: 60 хв</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="swiper-slide">-->
+    <!--                    <div class="portfolio-card">-->
+    <!--                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/pompadur.png')">-->
+    <!--                            <div class="portfolio-card-overlay" data-aos="fade-up">-->
+    <!--                                <h4>Помпадур</h4>-->
+    <!--                                <p>Стрижка: Класика</p>-->
+    <!--                                <p>Стиль: Ретро помпадур</p>-->
+    <!--                                <p>Час: 50 хв</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
 
-<!--            <div class="portfolio-next swiper-button-next"></div>-->
-<!--            <div class="portfolio-prev swiper-button-prev"></div>-->
-<!--            <div class="portfolio-pagination swiper-pagination"></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+    <!--            <div class="portfolio-next swiper-button-next"></div>-->
+    <!--            <div class="portfolio-prev swiper-button-prev"></div>-->
+    <!--            <div class="portfolio-pagination swiper-pagination"></div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
 
-<!-- Stats -->
-<!--<section class="stats">-->
-<!--    <div class="container">-->
-<!--        <div class="section-title" data-aos="fade-up">-->
-<!--            <h2>Чому обирають <span class="highlight">Old School Barber</span></h2>-->
-<!--            <p>Топова зачіска та гоління в самому серці Фашингтону</p>-->
-<!--        </div>-->
-<!--        <div class="stats-grid" data-aos="fade-up">-->
-<!--            <div class="stat-item" data-aos="fade-up">-->
-<!--                <div class="stat-icon">💈</div>-->
-<!--                <div class="stat-number">20</div>-->
-<!--                <div class="stat-label">Професійних барберів</div>-->
-<!--            </div>-->
-<!--            <div class="stat-item" data-aos="fade-up">-->
-<!--                <div class="stat-icon">✂</div>-->
-<!--                <div class="stat-number">786</div>-->
-<!--                <div class="stat-label">Виконаних стилів</div>-->
-<!--            </div>-->
-<!--            <div class="stat-item" data-aos="fade-up">-->
-<!--                <div class="stat-icon">⭐</div>-->
-<!--                <div class="stat-number">3249</div>-->
-<!--                <div class="stat-label">Задоволених клієнтів</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+    <!-- Stats -->
+    <!--<section class="stats">-->
+    <!--    <div class="container">-->
+    <!--        <div class="section-title" data-aos="fade-up">-->
+    <!--            <h2>Чому обирають <span class="highlight">Old School Barber</span></h2>-->
+    <!--            <p>Топова зачіска та гоління в самому серці Фашингтону</p>-->
+    <!--        </div>-->
+    <!--        <div class="stats-grid" data-aos="fade-up">-->
+    <!--            <div class="stat-item" data-aos="fade-up">-->
+    <!--                <div class="stat-icon">💈</div>-->
+    <!--                <div class="stat-number">20</div>-->
+    <!--                <div class="stat-label">Професійних барберів</div>-->
+    <!--            </div>-->
+    <!--            <div class="stat-item" data-aos="fade-up">-->
+    <!--                <div class="stat-icon">✂</div>-->
+    <!--                <div class="stat-number">786</div>-->
+    <!--                <div class="stat-label">Виконаних стилів</div>-->
+    <!--            </div>-->
+    <!--            <div class="stat-item" data-aos="fade-up">-->
+    <!--                <div class="stat-icon">⭐</div>-->
+    <!--                <div class="stat-number">3249</div>-->
+    <!--                <div class="stat-label">Задоволених клієнтів</div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
 
-<!-- Schedule -->
-<section class="schedule" id="schedule" data-aos="fade-up">
-    <div class="container">
-        <div class="section-title">
-            <h2>Ми <span class="highlight">Доступні</span></h2>
-            <p>Замовте свій візит у зручний час</p>
-        </div>
-        <div class="schedule-content">
-            <div class="schedule-info">
-                <h3>Час Роботи</h3>
-                <p><strong>Понеділок - Неділя: <br></strong> 10:00 - 20:00</p>
-                <br><br>
+    <!-- Schedule -->
+    <section class="schedule" id="schedule" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ми <span class="highlight">Доступні</span></h2>
+                <p>Замовте свій візит у зручний час</p>
             </div>
-            <div class="booking-box" data-aos="fade-up">
-                <div class="booking-icon">📅</div>
-                <h3>Онлайн Запис</h3>
-                <p>Оберіть зручний час та майстра</p>
-                <a href="https://n1394531.alteg.io" target="_blank" class="btn-booking">
-                    <span>Записатись Онлайн</span>
-                    <span class="arrow">→</span>
-                </a>
+            <div class="schedule-content">
+                <div class="schedule-info">
+                    <h3>Час Роботи</h3>
+                    <p><strong>Понеділок - Неділя: <br></strong> 10:00 - 20:00</p>
+                    <br><br>
+                </div>
+                <div class="booking-box" data-aos="fade-up">
+                    <div class="booking-icon">📅</div>
+                    <h3>Онлайн Запис</h3>
+                    <p>Оберіть зручний час та майстра</p>
+                    <a href="https://n1394531.alteg.io" target="_blank" class="btn-booking">
+                        <span>Записатись Онлайн</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Testimonials -->
+    <!-- Testimonials -->
     <!--<section class="testimonials">-->
     <!--    <div class="container">-->
     <!--        <div class="section-title" data-aos="fade-up">-->
@@ -276,31 +290,31 @@
     <!--    </div>-->
     <!--</section>-->
 
-<!-- Footer -->
-<div class="map">
+    <!-- Footer -->
+    <div class="map">
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.7583583329083!2d30.459238487316377!3d50.37106011980171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8f79cd82c3b%3A0xe7dda873638d01a1!2z0L_RgNC-0YHQvy4g0JDQutCw0LTQtdC80LjQutCwINCT0LvRg9GI0LrQvtCy0LAsIDnQkiwg0JrQuNC10LIsIDAzMTg3!5e0!3m2!1sru!2sua!4v1761644637076!5m2!1sru!2sua"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.7583583329083!2d30.459238487316377!3d50.37106011980171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8f79cd82c3b%3A0xe7dda873638d01a1!2z0L_RgNC-0YHQvy4g0JDQutCw0LTQtdC80LjQutCwINCT0LvRg9GI0LrQvtCy0LAsIDnQkiwg0JrQuNC10LIsIDAzMTg3!5e0!3m2!1sru!2sua!4v1761644637076!5m2!1sru!2sua"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-</div>
-<footer id="contact" data-aos="fade-up">
-    <div class="container">
-        <div class="logo" style="height: 150px"><img src="./img/Logo_transparent.png" alt=""></div>
-        <div class="footer-info">
-            <p><strong>Телефон:</strong> +380 93 759 25 49</p>
-            <p><strong>Email:</strong> info@osbarber.com</p>
-            <p><strong>Адреса:</strong> м.Київ Проспект Академіка Глушкова 9В</p>
-        </div>
-        <div class="social-links">
-            <a href="#"><img class="social-icon" src="./img/telegram.png" alt="telegram"></a><a
-                href="https://www.instagram.com/oldschool.barber_hop/?igsh=Z3NqNWZlZjE1Yjho#" target="_blank"><img
-                src="./img/instagram.png" class="social-icon" alt="instagram"></a>
-        </div>
-        <p style="margin-top:40px;color:#666;">© 2025 Old School Barber. Всі права захищені.</p>
     </div>
-</footer>
-
+    <footer id="contact" data-aos="fade-up">
+        <div class="container">
+            <div class="logo" style="height: 150px"><img src="./img/Logo_transparent.png" alt=""></div>
+            <div class="footer-info">
+                <p><strong>Телефон:</strong> +380 93 759 25 49</p>
+                <p><strong>Email:</strong> info@osbarber.com</p>
+                <p><strong>Адреса:</strong> м.Київ Проспект Академіка Глушкова 9В</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><img class="social-icon" src="./img/telegram.png" alt="telegram"></a><a
+                    href="https://www.instagram.com/oldschool.barber_hop/?igsh=Z3NqNWZlZjE1Yjho#" target="_blank"><img
+                    src="./img/instagram.png" class="social-icon" alt="instagram"></a>
+            </div>
+            <p style="margin-top:40px;color:#666;">© 2025 Old School Barber. Всі права захищені.</p>
+        </div>
+    </footer>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     // Portfolio Swiper
@@ -425,12 +439,47 @@
                         io.unobserve(entry.target);
                     }
                 });
-            }, { rootMargin: "300px 0px" });
+            }, {rootMargin: "300px 0px"});
 
             lazyBlocks.forEach(el => io.observe(el));
         } else {
             preloadOthers();
         }
+    });
+</script>
+<script>
+    const preloader = document.getElementById("preloader");
+    const content = document.getElementById("content");
+
+    // функция для скрытия прелоадера
+    function hidePreloader() {
+        preloader.style.opacity = "0";
+        setTimeout(() => {
+            preloader.style.display = "none";
+            content.style.display = "block";
+            content.classList.add("fade-in");
+        }, 600);
+    }
+
+    // ждём, когда всё загрузится
+    window.addEventListener("load", async () => {
+        // 1️⃣ ждём картинки (включая фоны)
+        await new Promise(resolve => {
+            imagesLoaded(document.body, { background: true }, resolve);
+        });
+
+        // 2️⃣ ждём шрифты
+        if (document.fonts) {
+            await document.fonts.ready;
+        }
+
+        // 3️⃣ минимальное время показа прелоадера (например, 1500 мс)
+        const minTime = new Promise(resolve => setTimeout(resolve, 1500));
+
+        await minTime;
+
+        // 4️⃣ скрываем прелоадер
+        hidePreloader();
     });
 </script>
 
