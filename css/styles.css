@@ -87,42 +87,7 @@ nav {
     display: none;
 }
 
-@media (max-width: 768px) {
-    nav {
-        justify-content: right;
-        position: relative;
-    }
 
-    header {
-        background-color: transparent;
-        border-bottom: 0;
-    }
-
-    .mobile-menu {
-        align-items: center;
-    }
-
-    .mobile-logo-hero {
-        display: block;
-        height: 200px;
-    }
-
-    .hero {
-        align-items: start !important;
-        background-position: 56% 10% !important;
-
-    }
-
-    .mobile-nav {
-        justify-content: start;
-    }
-
-    .mobile-menu {
-        position: absolute;
-        top: 75px;
-        right: 35px;
-    }
-}
 
 .nav-links {
     display: flex;
@@ -241,8 +206,10 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+    background-repeat: no-repeat;
+    flex-direction: column;
 
+}
 .hero-content h1 {
     font-size: 33px;
     margin-bottom: 10px;
@@ -250,19 +217,33 @@ nav {
     padding: 0 10px;
     line-height: 1.8;
 }
-
 .hero-content h2 {
     font-size: 22px;
     color: #d4af37;
     margin-bottom: 30px;
     line-height: 1.8;
 }
+.hero-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px auto;
+    font-family: "Inter", sans-serif;
+    position: fixed;
+    left: 5%;
+    top:5px;
+    z-index: 1000;
+}
 
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 22px;
+        margin-top: 150px !important;
     }
-
+    .hero{
+        align-items: start;
+    }
     .hero-content h2 {
         font-size: 16px;
     }
@@ -727,13 +708,53 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero-toggle{
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
     .portfolio-card-img {
         width: 95%;
         margin: 0 auto;
     }
+    .hero{
+        align-items: start;
+        justify-content: space-between;
+    }
+    nav {
+        justify-content: right;
+        position: relative;
+    }
 
+    header {
+        background-color: transparent;
+        border-bottom: 0;
+    }
 
+    .mobile-menu {
+        align-items: center;
+    }
 
+    .mobile-logo-hero {
+        display: block;
+        height: 200px;
+    }
+
+    .hero {
+        align-items: start !important;
+        background-position: 56% 10% !important;
+    }
+
+    .mobile-nav {
+        justify-content: start;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 75px;
+        right: 35px;
+    }
     .nav-links {
         display: none;
     }
@@ -744,7 +765,7 @@ footer {
 
     .hero-content h1 {
         font-size: 22px;
-        margin-top: 75px;
+        margin-top: 150px;
     }
 
     .hero-content h2 {
@@ -789,6 +810,9 @@ footer {
 }
 
 @media (max-width: 1150px) {
+    .hero-toggle{
+        left: 10px;
+    }
     .appointment {
         right: 1%;
     }
@@ -839,7 +863,7 @@ footer {
     background-repeat: no-repeat;
     opacity: 0;
     transition: opacity .4s ease;
-    will-change: opacity, background-image;
+
 }
 .lazy-bg.loaded {
     opacity: 1;
@@ -872,25 +896,8 @@ lottie-player {
 #content.fade-in {
     opacity: 1;
 }
-.toggle-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin: 40px auto;
-    font-family: "Inter", sans-serif;
-    position: absolute;
-    left: 5%;
-    top:80px;
-    z-index: 1000;
-}
-@media (max-width: 768px){
-    .toggle-wrapper{
-        left: calc(50% - 175px);
-        top: 150px;
-        position: absolute;
-    }
-}
+
+
 .toggle-option {
     text-decoration: none;
     color: #ccc;

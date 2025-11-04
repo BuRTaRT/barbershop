@@ -16,6 +16,8 @@
     <meta property="og:locale" content="uk_UA">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 
 </head>
@@ -45,15 +47,7 @@
 <!--    <option value="variant_12">variant_12</option>-->
 <!--</select>-->
 <!-- Header -->
-<div class="content" id="content" style="display:none;">
-    <div class="toggle-wrapper">
-        <a href="/index.html" class="toggle-option left">Барбершоп</a>
-        <div class="toggle-button">
-            <input type="checkbox" id="site-toggle">
-            <label for="site-toggle"></label>
-        </div>
-        <a href="/manicure/index.html" class="toggle-option right">Манікюр</a>
-    </div>
+<div class="content" id="content" ">
     <header>
         <nav>
             <ul class="nav-links">
@@ -89,6 +83,14 @@
             <h1>“Стрижем, як колись. Живем, як легенди.”</h1>
             <h2> Cut like old times. Live like legends.</h2>
             <a href="https://n1394531.alteg.io" target="_blank" class="btn mob-btn">Записатись</a>
+        </div>
+        <div class="toggle-wrapper hero-toggle">
+            <a href="../index.html" class="toggle-option left">Барбершоп</a>
+            <div class="toggle-button">
+                <input type="checkbox" id="site-toggle">
+                <label for="site-toggle"></label>
+            </div>
+            <a href="./manicure/index.html" class="toggle-option right">Манікюр</a>
         </div>
     </section>
 
@@ -492,19 +494,20 @@
 </script>
 <script>
     const toggle = document.getElementById('site-toggle');
-    console.log('hi');
-    // если мы на странице маникюра, отмечаем тумблер
-    if (location.pathname.includes('./manicure')) {
+
+    // Проверяем страницу
+    if (location.pathname.includes('manicure')) {
         toggle.checked = true;
-    } else if (!location.pathname.includes('./manicure')) {
+    } else {
         toggle.checked = false;
     }
 
+    // Обработка переключения
     toggle.addEventListener('change', () => {
         if (toggle.checked) {
             window.location.href = './manicure/index.html';
         } else {
-            window.location.href = './index.html';
+            window.location.href = '../index.html';
         }
     });
 </script>

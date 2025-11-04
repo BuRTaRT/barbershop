@@ -4,13 +4,6 @@
     --font-size3:20px ;
 }
 
-
-
-
-
-
-
-
 @font-face {
     font-family: 'variant_2';
     src: url('../fonts/caslonantiquerus_.otf');
@@ -18,8 +11,6 @@
     font-style: normal;
     /*Elisabethische*/
 }
-
-
 
 @font-face {
     font-family: 'variant_12';
@@ -100,38 +91,6 @@ nav {
 
 .mobile-logo-hero {
     display: none;
-}
-
-@media (max-width: 768px) {
-    nav {
-        justify-content: right;
-        position: relative;
-    }
-
-    header {
-        background-color: transparent;
-        border-bottom: 0;
-    }
-
-    .mobile-menu {
-        align-items: center;
-    }
-
-    .mobile-logo-hero {
-        display: block;
-        height: 200px;
-    }
-
-
-    .mobile-nav {
-        justify-content: start;
-    }
-
-    .mobile-menu {
-        position: absolute;
-        top: 75px;
-        right: 35px;
-    }
 }
 
 .nav-links {
@@ -255,7 +214,9 @@ p{
     justify-content: center;
     text-align: center;
     background-repeat: no-repeat;
+    flex-direction: column;
 }
+
 .hero::after {
     content: "";
     position: absolute;
@@ -263,7 +224,7 @@ p{
     background-color: rgba(0,0,0,0.55);
 }
 .hero-content{
-    position: relative;
+    /*position: relative;*/
     z-index: 1;
 }
 .hero-content h1 {
@@ -761,58 +722,6 @@ footer {
     text-align: center;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .portfolio-card-img {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-
-
-    .nav-links {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: flex;
-    }
-    .hero-content h1 {
-        font-size: 22px;
-        margin-top: 150px;
-    }
-
-    .hero-content h2 {
-        font-size: 16px;
-    }
-    .schedule-content,
-    .manicure-content {
-        grid-template-columns: 1fr;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-
-    .services-grid,
-    .stylists-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio-card {
-        width: 300px;
-        height: 400px;
-    }
-
-    .nav-links {
-        display: none !important;
-    }
-}
-
 .appointment {
     position: absolute;
     right: 10%;
@@ -826,13 +735,12 @@ footer {
     .appointment {
         right: 1%;
     }
+    .hero-toggle{
+        left: 10px !important;
+    }
 }
 
 @media (max-width: 830px) {
-    .appointment {
-        display: none;
-    }
-
     .mobile-btn {
         display: block !important;
         position: relative;
@@ -874,27 +782,18 @@ footer {
 a[href="#home"],a[href="#portfolio"]{
     display: none;
 }
-.toggle-wrapper {
+.hero-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
     margin: 40px auto;
     font-family: "Inter", sans-serif;
-    position: absolute;
+    position: fixed;
     left: 5%;
-    top:100px;
-    z-index: 1000;
+    top:5px;
+    z-index: 1001;
 }
-@media (max-width: 768px){
-    .toggle-wrapper{
-        left: calc(50% - 120px);
-        top: 165px;
-        position: absolute;
-
-    }
-}
-
 .toggle-option {
     text-decoration: none;
     color: #ccc;
@@ -973,4 +872,101 @@ lottie-player {
 }
 #content.fade-in {
     opacity: 1;
+}
+@media (max-width: 820px) {
+    .hero-toggle{
+        top:100px;
+    }
+
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .appointment {
+        display: none;
+    }
+    .hero-toggle{
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    nav {
+        justify-content: right;
+        position: relative;
+    }
+
+    header {
+        background-color: transparent;
+        border-bottom: 0;
+    }
+
+    .mobile-menu {
+        align-items: center;
+    }
+
+    .mobile-logo-hero {
+        display: block;
+        height: 200px;
+    }
+
+
+    .mobile-nav {
+        justify-content: start;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 75px;
+        right: 35px;
+    }
+    .hero {
+        justify-content: space-between;
+
+    }
+    .portfolio-card-img {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+    .hero-content h1 {
+        font-size: 22px;
+        margin-top: 150px;
+    }
+
+    .hero-content h2 {
+        font-size: 16px;
+    }
+    .schedule-content,
+    .manicure-content {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid,
+    .stylists-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .nav-links {
+        display: none !important;
+    }
 }
