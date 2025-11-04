@@ -239,7 +239,7 @@ nav {
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 22px;
-        margin-top: 150px !important;
+        margin-top: 75px ;
     }
     .hero{
         align-items: start;
