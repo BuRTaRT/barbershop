@@ -206,6 +206,7 @@ p{
 
 /* Hero Section */
 .hero {
+    max-height: 100vh;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -254,7 +255,6 @@ p{
     }
     .hero-content h1 {
         font-size: 22px;
-        margin-top: 150px !important;
     }
 
     .hero-content h2 {
@@ -937,7 +937,7 @@ lottie-player {
     }
     .hero-content h1 {
         font-size: 22px;
-        margin-top: 150px;
+        margin-top: 75px;
     }
 
     .hero-content h2 {
