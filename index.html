@@ -493,23 +493,48 @@
     });
 </script>
 <script>
-    const toggle = document.getElementById('site-toggle');
+    (() => {
+        // --- ЗАХАРДКОДЬ тут режим для каждой конкретной страницы ---
+        // На barber странице: const PAGE_MODE = 'barber';
+        // На manicure странице: const PAGE_MODE = 'manicure';
+        const PAGE_MODE = 'barber'; // <-- Поменяй на 'manicure' на соответствующей странице
 
-    // Проверяем страницу
-    if (location.pathname.includes('manicure')) {
-        toggle.checked = true;
-    } else {
-        toggle.checked = false;
-    }
+        const toggle = document.getElementById('site-toggle');
+        const paths = {
+            barber:  '../index.html',           // куда вести при barber
+            manicure: './manicure/index.html',  // куда вести при manicure
+        };
 
-    // Обработка переключения
-    toggle.addEventListener('change', () => {
-        if (toggle.checked) {
-            window.location.href = './manicure/index.html';
-        } else {
-            window.location.href = '../index.html';
+        function syncUI() {
+            if (!toggle) return;
+            toggle.checked = PAGE_MODE === 'manicure';
         }
-    });
+
+        function goTo(mode) {
+            const target = mode === 'manicure' ? paths.manicure : paths.barber;
+            // replace — чтобы не создавать новую запись в истории
+            location.replace(target);
+        }
+
+        // init при загрузке или при возврате из bfcache
+        function init() {
+            syncUI();
+        }
+
+        if (toggle) {
+            toggle.addEventListener('change', () => {
+                const next = toggle.checked ? 'manicure' : 'barber';
+                goTo(next);
+            });
+        }
+
+        // срабатывает при навигации назад/вперёд (включая bfcache)
+        window.addEventListener('pageshow', init);
+
+        // первичный запуск
+        init();
+    })();
 </script>
+
 </body>
 </html>
