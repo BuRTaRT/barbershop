@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Moskina</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./Amelia-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <meta property="og:title" content="Old School Barber — Барбершоп для справжніх чоловіків">
+    <meta property="og:description" content="Стрижка, гоління, догляд. Запишись онлайн и відчуй стиль.">
+    <meta property="og:image" content="https://oldschool-barber.com/img/social.png">
+    <meta property="og:url" content="https://oldschool-barber.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+</head>
+<body>
+<div id="preloader">
+    <dotlottie-player
+            src="../Barber.json"
+            speed="1"
+            style="width: 500px; height: 500px;"
+            loop
+            autoplay>
+    </dotlottie-player>
+</div>
+<!--<select style="z-index: 10000" id="fonts">-->
+<!--    <option value="sans-serif">sans-serif</option>-->
+<!--    <option value="variant_1">variant_1</option>-->
+<!--    <option value="variant_2">variant_2</option>-->
+<!--    <option value="variant_3">variant_3</option>-->
+<!--    <option value="variant_4">variant_4</option>-->
+<!--    <option value="variant_5">variant_5</option>-->
+<!--    <option value="variant_6">variant_6</option>-->
+<!--    <option value="variant_7">variant_7</option>-->
+<!--    <option value="variant_8">variant_8</option>-->
+<!--    <option value="variant_9">variant_9</option>-->
+<!--    <option value="variant_10">variant_10</option>-->
+<!--    <option value="variant_11">variant_11</option>-->
+<!--    <option value="variant_12">variant_12</option>-->
+<!--</select>-->
+<!--<select style="z-index: 10000" id="bg">-->
+<!--    <option value="bg-5.png">bg-5</option>-->
+<!--    <option value="bg-1.png">bg-1</option>-->
+<!--    <option value="bg-3.jpg">bg-3</option>-->
+<!--    <option value="bg-4.png">bg-4</option>-->
+<!--    <option value="bg-6.png">bg-6</option>-->
+<!--</select>-->
+<!-- Header -->
+<div class="content" id="content" >
+<header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <div class="logo"><img src="Amelia-removebg-preview.png" alt=""></div>
+            <li><a href="#portfolio">Роботи</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+        <a class="appointment btn" target="_blank" href="https://dikidi.app/1131799">Записатись</a>
+
+
+        <div class="mobile-menu">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+    <div class="logo mobile-logo"><img src="Amelia-removebg-preview.png" alt=""></div>
+    <div class="close-menu"></div>
+
+    <a href="#home">Головна</a>
+    <a href="#services">Послуги</a>
+    <a href="#portfolio">Роботи</a>
+    <a href="#schedule">Розклад</a>
+    <a href="#contact">Контакти</a>
+    <a class="appointment btn mobile-btn" target="_blank" href="https://dikidi.app/1131799">Записатись</a>
+</div>
+
+<!-- Hero Section -->
+
+    <section class="hero lazy-bg" data-bg="url('bg-5.png')" id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="logo mobile-logo-hero"><img src="Amelia-removebg-preview.png" alt=""></div>
+            <h1>“Краса в деталях. Стиль — у тобі.”</h1>
+            <h2>Beauty is in the details. Style is within you.</h2>
+            <a href="https://dikidi.app/1131799" target="_blank" class="btn mob-btn">Записатись</a>
+        </div>
+        <div class="toggle-wrapper hero-toggle">
+            <a href="../index.html" class="toggle-option left">Барбершоп</a>
+            <div class="toggle-button">
+                <input type="checkbox" id="site-toggle">
+                <label for="site-toggle"></label>
+            </div>
+            <a href="#" class="toggle-option right">Манікюр</a>
+        </div>
+    </section>
+<!-- Services -->
+<section class="services" id="services">
+    <div class="container">
+        <div data-aos="fade-up" class="section-title">
+            <h2>Популярні <span class="highlight">Послуги</span></h2>
+            <p>Професійний догляд для справжніх леді</p>
+        </div>
+        <div class="services-grid" data-aos="fade-up">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon"><img height="100%" src="./img/1.png"></div>
+                <h3>МАНІКЮР</h3>
+                <p>Класичний, апаратний або комбінований манікюр з доглядом за шкірою рук.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon"><img height="120%" src="./img/2-3.png"></div>
+                <h3>ПОКРИТТЯ ГЕЛЬ-ЛАКОМ</h3>
+                <p>Стійке покриття високоякісними матеріалами, ідеальний блиск до 3 тижнів.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon"><img height="100%" src="./img/3-2.png"></div>
+                <h3>ДИЗАЙН НІГТІВ</h3>
+                <p>Індивідуальний дизайн та мінімалізм.</p>
+            </div>
+<!--            <div class="service-card" data-aos="fade-up">-->
+<!--                <div class="service-icon"><img height="100%" src="./img/4.png">-->
+<!--                </div>-->
+<!--                <h3>ДОГЛЯД ЗА РУКАМИ</h3>-->
+<!--                <p>Парафінотерапія, скрабування, живильні маски для шкіри рук.</p>-->
+<!--            </div>-->
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section class="portfolio" id="portfolio" data-aos="fade-up">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Мої <span class="highlight">Роботи</span></h2>
+            <p>Перегляньте приклади робіт</p>
+        </div>
+
+        <div class="swiper portfolioSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img lazy-bg" data-bg="url(./img/portfolio-1.jpg)">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img lazy-bg" data-bg="url(./img/portfolio-2.jpg)">
+                            <div class="portfolio-card-overlay" data-aos="fade-up">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/portfolio-3.jpg')">
+                            <div class="portfolio-card-overlay" data-aos="fade-up">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/portfolio-4.jpg')">
+                            <div class="portfolio-card-overlay" data-aos="fade-up">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/portfolio-5.jpg')">
+                            <div class="portfolio-card-overlay" data-aos="fade-up">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/portfolio-6.jpg')">
+                            <div class="portfolio-card-overlay" data-aos="fade-up">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img lazy-bg" data-bg="url('./img/portfolio-7.jpg')">
+                            <div class="portfolio-card-overlay" data-aos="fade-up">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-next swiper-button-next"></div>
+            <div class="portfolio-prev swiper-button-prev"></div>
+            <div class="portfolio-pagination swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats -->
+<!--<section class="stats">-->
+<!--    <div class="container">-->
+<!--        <div class="section-title" data-aos="fade-up">-->
+<!--            <h2>Чому обирають <span class="highlight">Old School Barber</span></h2>-->
+<!--            <p>Топова зачіска та гоління в самому серці Фашингтону</p>-->
+<!--        </div>-->
+<!--        <div class="stats-grid" data-aos="fade-up">-->
+<!--            <div class="stat-item" data-aos="fade-up">-->
+<!--                <div class="stat-icon">💈</div>-->
+<!--                <div class="stat-number">20</div>-->
+<!--                <div class="stat-label">Професійних барберів</div>-->
+<!--            </div>-->
+<!--            <div class="stat-item" data-aos="fade-up">-->
+<!--                <div class="stat-icon">✂</div>-->
+<!--                <div class="stat-number">786</div>-->
+<!--                <div class="stat-label">Виконаних стилів</div>-->
+<!--            </div>-->
+<!--            <div class="stat-item" data-aos="fade-up">-->
+<!--                <div class="stat-icon">⭐</div>-->
+<!--                <div class="stat-number">3249</div>-->
+<!--                <div class="stat-label">Задоволених клієнтів</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Schedule -->
+<section class="schedule" id="schedule" data-aos="fade-up">
+    <div class="container">
+        <div class="section-title">
+            <h2>Ми <span class="highlight">Доступні</span></h2>
+            <p>Замовте свій візит у зручний час</p>
+        </div>
+        <div class="schedule-content">
+            <div class="schedule-info">
+                <h3>Час Роботи</h3>
+                <p><strong>Понеділок - Неділя: <br></strong> 10:00 - 20:00</p>
+                <br><br>
+            </div>
+            <div class="booking-box" data-aos="fade-up">
+                <div class="booking-icon">📅</div>
+                <h3>Онлайн Запис</h3>
+                <p>Оберіть зручний час та майстра</p>
+                <a href="https://dikidi.app/1131799" target="_blank" class="btn-booking">
+                    <span>Записатись Онлайн</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<!--<section class="testimonials">-->
+<!--    <div class="container">-->
+<!--        <div class="section-title" data-aos="fade-up">-->
+<!--            <h2>Задоволені <span class="highlight">Клієнти</span></h2>-->
+<!--        </div>-->
+<!--        <div class="swiper testimonialSwiper">-->
+<!--            <div class="swiper-wrapper">-->
+<!--                <div class="swiper-slide">-->
+<!--                    <div class="testimonial" data-aos="fade-up">-->
+<!--                        <div class="stars">★★★★★</div>-->
+<!--                        <p>“Вперше був у цьому барбершопі — атмосфера просто топ! Майстер Олександр зробив ідеальну-->
+<!--                            стрижку, врахував форму голови й тип волосся. Видно, що людина знає свою справу. Тепер-->
+<!--                            тільки сюди!”</p>-->
+<!--                        <div class="testimonial-author">Андрій</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="swiper-slide">-->
+<!--                    <div class="testimonial">-->
+<!--                        <div class="stars">★★★★★</div>-->
+<!--                        <p>“Сервіс на рівні, стиль — бездоганний. Дуже сподобалось, як оформили бороду, тепер дружина в-->
+<!--                            захваті. Дякую майстру Максу!”</p>-->
+<!--                        <div class="testimonial-author">Віталій</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="swiper-slide">-->
+<!--                    <div class="testimonial">-->
+<!--                        <div class="stars">★★★★★</div>-->
+<!--                        <p>“Зайшов випадково — вийшов новою людиною 😎. Навіть барбер пожартував, що тепер мені треба-->
+<!--                            новий паспорт, бо на фото вже не схожий.”</p>-->
+<!--                        <div class="testimonial-author">Дмитро</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="testimonial-next swiper-button-next"></div>-->
+<!--            <div class="testimonial-prev swiper-button-prev"></div>-->
+<!--            <div class="testimonial-pagination swiper-pagination"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Footer -->
+<div class="map">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.7583583329083!2d30.459238487316377!3d50.37106011980171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8f79cd82c3b%3A0xe7dda873638d01a1!2z0L_RgNC-0YHQvy4g0JDQutCw0LTQtdC80LjQutCwINCT0LvRg9GI0LrQvtCy0LAsIDnQkiwg0JrQuNC10LIsIDAzMTg3!5e0!3m2!1sru!2sua!4v1761644637076!5m2!1sru!2sua"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+<footer id="contact" data-aos="fade-up">
+    <div class="container">
+        <div class="logo" style="height: 150px"><img src="./Amelia-removebg-preview.png" alt=""></div>
+        <div class="footer-info">
+            <p><strong>Телефон:</strong> +380 97 494 40 42</p>
+            <p><strong>Email:</strong> info@osbarber.com</p>
+            <p><strong>Адреса:</strong> м.Київ Проспект Академіка Глушкова 9В</p>
+        </div>
+        <div class="social-links">
+            <a href="#"><img class="social-icon" src="./img/telegram.png" alt="telegram"></a><a
+                href="https://www.instagram.com/amelia_nailss_kyiv?igsh=ZXB5Y3J0eXRrMzcx" target="_blank"><img
+                src="../img/instagram.png" class="social-icon" alt="instagram"></a>
+        </div>
+        <p style="margin-top:40px;color:#666;">© 2025 Old School Barber. Всі права захищені.</p>
+    </div>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    // Portfolio Swiper
+    const portfolioSwiper = new Swiper('.portfolioSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {delay: 3000, disableOnInteraction: false},
+        pagination: {el: '.portfolio-pagination', clickable: true},
+        navigation: {nextEl: '.portfolio-next', prevEl: '.portfolio-prev'},
+        breakpoints: {
+            640: {slidesPerView: 2, spaceBetween: 20},
+            1024: {slidesPerView: 3, spaceBetween: 30},
+        },
+    });
+
+    // Testimonial Swiper
+    const testimonialSwiper = new Swiper('.testimonialSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {delay: 4000, disableOnInteraction: false},
+        pagination: {el: '.testimonial-pagination', clickable: true},
+        navigation: {nextEl: '.testimonial-next', prevEl: '.testimonial-prev'},
+        breakpoints: {
+            640: {slidesPerView: 1},
+            1024: {slidesPerView: 1},
+        },
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(anchor.getAttribute('href'));
+            if (target) target.scrollIntoView({behavior: 'smooth', block: 'start'});
+            document.querySelector('.mobile-nav').classList.remove('active');
+            document.querySelector('.mobile-menu').classList.remove('active');
+        });
+    });
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const closeMenuBtn = document.querySelector('.close-menu');
+
+    if (mobileMenuBtn && mobileNav && closeMenuBtn) {
+        mobileMenuBtn.addEventListener('click', e => {
+            e.stopPropagation();
+            mobileNav.classList.add('active');
+            mobileMenuBtn.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMenuBtn.addEventListener('click', e => {
+            e.stopPropagation();
+            mobileNav.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,   // длительность анимации (мс)
+        once: true,      // запускать только один раз
+        offset: 100      // насколько раньше начинать (px)
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const hero = document.querySelector(".hero");
+        const lazyBlocks = document.querySelectorAll(".lazy-bg");
+
+        function loadBg(el) {
+            const bg = el.dataset.bg;
+            if (bg && !el.classList.contains("loaded")) {
+                el.style.backgroundImage = bg;
+                el.classList.add("loaded");
+            }
+        }
+
+        // Загружаем фон hero сразу
+        if (hero && hero.dataset.bg) {
+            hero.style.backgroundImage = hero.dataset.bg;
+            hero.classList.add("loaded");
+        }
+
+        // После загрузки hero (или через 1 секунду) подгружаем остальные
+        const preloadOthers = () => {
+            lazyBlocks.forEach(el => {
+                if (el !== hero) loadBg(el);
+            });
+        };
+
+        // Если hero имеет фон — ждём его фактической загрузки
+        const heroBgUrl = hero?.dataset.bg?.match(/url\(['"]?(.*?)['"]?\)/)?.[1];
+        if (heroBgUrl) {
+            const img = new Image();
+            img.src = heroBgUrl;
+            img.onload = () => setTimeout(preloadOthers, 1000);
+        } else {
+            // если нет фона у hero — грузим всё через секунду
+            setTimeout(preloadOthers, 1000);
+        }
+
+        // Плюс IntersectionObserver на всякий случай (если пользователь скроллит быстро)
+        if ("IntersectionObserver" in window) {
+            const io = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        loadBg(entry.target);
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, {rootMargin: "300px 0px"});
+
+            lazyBlocks.forEach(el => io.observe(el));
+        } else {
+            preloadOthers();
+        }
+    });
+</script>
+<script>
+    (() => {
+        // --- ЗАХАРДКОДЬ тут режим для каждой конкретной страницы ---
+        // На barber странице: const PAGE_MODE = 'barber';
+        // На manicure странице: const PAGE_MODE = 'manicure';
+        const PAGE_MODE = 'manicure'; // <-- Поменяй на 'manicure' на соответствующей странице
+
+        const toggle = document.getElementById('site-toggle');
+        const paths = {
+            barber:  '../index.html',           // куда вести при barber
+            manicure: './manicure/index.html',  // куда вести при manicure
+        };
+
+        function syncUI() {
+            if (!toggle) return;
+            toggle.checked = PAGE_MODE === 'manicure';
+        }
+
+        function goTo(mode) {
+            const target = mode === 'manicure' ? paths.manicure : paths.barber;
+            // replace — чтобы не создавать новую запись в истории
+            location.replace(target);
+        }
+
+        // init при загрузке или при возврате из bfcache
+        function init() {
+            syncUI();
+        }
+
+        if (toggle) {
+            toggle.addEventListener('change', () => {
+                const next = toggle.checked ? 'manicure' : 'barber';
+                goTo(next);
+            });
+        }
+
+        // срабатывает при навигации назад/вперёд (включая bfcache)
+        window.addEventListener('pageshow', init);
+
+        // первичный запуск
+        init();
+    })();
+</script>
+
+<script>
+    const preloader = document.getElementById("preloader");
+    const content = document.getElementById("content");
+
+    // функция для скрытия прелоадера
+    function hidePreloader() {
+        preloader.style.opacity = "0";
+        setTimeout(() => {
+            preloader.style.display = "none";
+            content.style.display = "block";
+            content.classList.add("fade-in");
+        }, 600);
+    }
+
+    // ждём, когда всё загрузится
+    window.addEventListener("load", async () => {
+        // 1️⃣ ждём картинки (включая фоны)
+        await new Promise(resolve => {
+            imagesLoaded(document.body, {background: true}, resolve);
+        });
+
+        // 2️⃣ ждём шрифты
+        if (document.fonts) {
+            await document.fonts.ready;
+        }
+
+        // 3️⃣ минимальное время показа прелоадера (например, 1500 мс)
+        const minTime = new Promise(resolve => setTimeout(resolve, 1500));
+
+        await minTime;
+
+        // 4️⃣ скрываем прелоадер
+        setTimeout(()=>{
+            hidePreloader();
+        },200)
+    });
+</script>
+<!--<script src="./js/myJs.js"></script>-->
+</body>
+</html>
