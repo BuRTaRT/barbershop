@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old School Barbershop — Классический барберинг</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+</head>
+<body>
+<div id="preloader">
+    <dotlottie-player
+            src="./Barber.json"
+            speed="1"
+            style="width: 500px; height: 500px;"
+            loop
+            autoplay>
+    </dotlottie-player>
+</div>
+   <div class="content" id="content">
+       <!-- Navigation -->
+       <nav>
+           <div class="container">
+               <button class="nav-toggle" id="navToggle" aria-label="Меню" aria-expanded="false" aria-controls="navMenu">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+               </button>
+               <ul id="navMenu">
+                   <li><a href="#services">Послуги</a></li>
+                   <li><a href="#about">Про Нас</a></li>
+                   <li><a href="#portfolio">Роботи</a></li>
+                   <li><a href="#contact">Контакти</a></li>
+                   <li><a href="#" class="nav-book ms_booking">Записатись</a></li>
+               </ul>
+           </div>
+       </nav>
+
+       <!-- Hero Section -->
+       <section class="hero">
+
+           <canvas class="hero-canvas" id="heroCanvas"></canvas>
+           <video class="hero-video" id="heroVideo" muted playsinline preload="none">
+               <source src="123.mp4" type="video/mp4">
+           </video>
+           <video class="hero-chair-mobile" id="heroChairMobile" muted loop playsinline preload="none" poster="hero-chair-mobile.jpg">
+               <source data-src="mobilzero.mp4" type="video/mp4">
+           </video>
+
+           <div class="hero-content hero-left">
+               <div class="hero-tagline">
+                   <p class="tagline-main">СТРИЖЕМ, ЯК КОЛИСЬ. ЖИВЕМ, ЯК ЛЕГЕНДИ.</p>
+                   <p class="tagline-en">Cut like old times. Live like legends.</p>
+               </div>
+               <div class="hero-text-en">
+                   <p>СТРИЖЕМ, ЯК КОПИСЬ. ЖИВЕМ, ЯК ЛЕГЕНДИ.</p>
+               </div>
+           </div>
+
+           <div class="hero-buttons-bottom" style="margin-bottom: 45px;">
+               <a href="#"><button class="btn-primary ms_booking">Записатись</button></a>
+           </div>
+           <div class="toggle-wrapper hero-toggle">
+               <a href="#" class="toggle-option left">Барбершоп</a>
+               <div class="toggle-button">
+                   <input type="checkbox" id="site-toggle">
+                   <label for="site-toggle"></label>
+               </div>
+               <a href="./manicure/index.html" class="toggle-option right">Манікюр</a>
+           </div>
+
+           <div class="hero-right">
+               <div class="hero-video-wrapper">
+               </div>
+           </div>
+           <!--        <div class="scroll-indicator">-->
+           <!--            <a href="#services">-->
+           <!--                ↓<br>Прокрутити-->
+           <!--            </a>-->
+           <!--        </div>-->
+
+       </section>
+
+       <!-- Services Section -->
+       <section class="services" id="services">
+           <div class="container">
+               <h2 class="section-title">ПОПУЛЯРНІ <span class="gold">ПОСЛУГИ</span></h2>
+               <p class="section-subtitle">ПРОФЕСІЙНИЙ ДОГЛЯД ДЛЯ СПРАВЖНІХ ЧОЛОВІКІВ</p>
+           </div>
+           <div class="services-stage">
+               <img src="2block.jpeg" alt="" class="services-bg" loading="lazy">
+               <a href="#s" class="service-link ms_booking">Записатись →</a>
+               <a href="#s" class="service-link ms_booking">Записатись →</a>
+               <a href="#s" class="service-link ms_booking">Записатись →</a>
+               <a href="#s" class="service-link ms_booking">Записатись →</a>
+           </div>
+       </section>
+
+       <!-- About Section -->
+       <section class="about" id="about">
+           <div class="about-content">
+               <div class="about-image">
+                   <video class="about-video" id="aboutVideo" muted loop playsinline preload="none">
+                       <source src="video.mp4" type="video/mp4">
+                   </video>
+               </div>
+               <div class="about-text">
+                   <h2>Традиція. Пристрасть. Досконалість.</h2>
+                   <p>У Old School Barber ми вірим, що чудова стрижка - це не просто послуга, а досвід. Наші барбери поєднують традиційні техніки з сучасним стилем, щоб дати вам гострі образи та вічну впевненість.</p>
+
+                   <div class="features-grid">
+                       <div class="feature-item">
+                           <h4>Досвідчені Барбери</h4>
+                           <p>Багаторічний досвід в класичних та сучасних техніках барберингу</p>
+                       </div>
+                       <div class="feature-item">
+                           <h4>Преміальні Засоби</h4>
+                           <p>Тільки найкращі засоби для ваших волосся та шкіри</p>
+                       </div>
+                       <div class="feature-item">
+                           <h4>Розслаблена Атмосфера</h4>
+                           <p>Безплатні напитки та вінтажний дизайн</p>
+                       </div>
+                       <div class="feature-item">
+                           <h4>100% Задоволення</h4>
+                           <p>Гарантована якість з особливою увагою до деталей</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Pricing Section -->
+       <section class="pricing">
+           <div class="container">
+               <div class="pricing-header">
+                   <span class="label">Прайс-лист</span>
+                   <h2>Переглянути наш прайс барбера</h2>
+               </div>
+               <div class="pricing-grid">
+                   <div>
+                       <h3 class="pricing-column-title">Окремі послуги</h3>
+                       <div class="pricing-item">
+                           <div class="pricing-item-left">
+                               <h3>Стрижка машинкою</h3>
+                               <p>Швидке та якісне оброблення волосся на обличчі.</p>
+                           </div>
+                           <div class="pricing-item-price">500 ₴</div>
+                       </div>
+                       <div class="pricing-item">
+                           <div class="pricing-item-left">
+                               <h3>Оформлення бороди</h3>
+                               <p>Професійне підстригування та моделювання бороди.</p>
+                           </div>
+                           <div class="pricing-item-price">600 ₴</div>
+                       </div>
+                       <div class="pricing-item">
+                           <div class="pricing-item-left">
+                               <h3>Моделювання бороди</h3>
+                               <p>Якісне моделювання бороди з преміальними засобами.</p>
+                           </div>
+                           <div class="pricing-item-price">700 ₴</div>
+                       </div>
+                       <div class="pricing-item">
+                           <div class="pricing-item-left">
+                               <h3>Стрижка</h3>
+                               <p>Класичні та сучасні чоловічі стрижки від досвідчених майстрів.</p>
+                           </div>
+                           <div class="pricing-item-price">800 ₴</div>
+                       </div>
+                       <div class="pricing-item">
+                           <div class="pricing-item-left">
+                               <h3>Гоління</h3>
+                               <p>Класичне гоління звичайною бритвою з гарячим рушником.</p>
+                           </div>
+                           <div class="pricing-item-price">900 ₴</div>
+                       </div>
+                   </div>
+                   <div>
+                       <h3 class="pricing-column-title">Комплексні пропозиції</h3>
+                       <div class="pricing-item">
+                           <div class="pricing-item-left">
+                               <h3>Стрижка + Оформлення</h3>
+                               <p>Комплекс: стрижка та оформлення бороди в одному сеансі.</p>
+                           </div>
+                           <div class="pricing-item-price">1,200 ₴</div>
+                       </div>
+                       <div class="pricing-item">
+                           <div class="pricing-item-left">
+                               <h3>Повний комплекс</h3>
+                               <p>Стрижка, оформлення бороди та гоління з гарячим рушником.</p>
+                           </div>
+                           <div class="pricing-item-price">1,500 ₴</div>
+                       </div>
+                       <div class="pricing-item">
+                           <div class="pricing-item-left">
+                               <h3>Спеціальна послуга</h3>
+                               <p>Індивідуальний підхід до кожного клієнта барбера.</p>
+                           </div>
+                           <div class="pricing-item-price">від 1,000 ₴</div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Stats Section -->
+       <section class="stats">
+           <div class="stats-container">
+               <div class="stat-item">
+                   <div class="stat-number">6</div>
+                   <div class="stat-label">Років</div>
+                   <div class="stat-description">досвіду в професії</div>
+               </div>
+               <div class="stat-item">
+                   <div class="stat-number">1000+</div>
+                   <div class="stat-label">Задоволених</div>
+                   <div class="stat-description">клієнтів</div>
+               </div>
+               <div class="stat-item">
+                   <div class="stat-number">6</div>
+                   <div class="stat-label">Професійних</div>
+                   <div class="stat-description">барберів</div>
+               </div>
+               <div class="stat-item">
+                   <div class="stat-number">98%</div>
+                   <div class="stat-label">Задоволення</div>
+                   <div class="stat-description">клієнтів</div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Team Section -->
+       <section class="team">
+           <div class="container">
+               <div class="team-header">
+                   <span class="label">Команда</span>
+                   <h2>Наші барбери</h2>
+               </div>
+               <div class="team-grid">
+                   <div class="barber-card">
+                       <div class="barber-avatar"><img src="kol.jpg" alt="Микола" loading="lazy"></div>
+                       <div class="barber-name">Микола</div>
+                       <div class="barber-title">Cut Master</div>
+                       <div class="barber-experience">Досвід 6 років</div>
+                       <p class="barber-skills">Класичні та сучасні чоловічі стрижки, фейд, стайлінг.</p>
+                       <p class="barber-bio">«Стрижка для мене — справжня пристрасть, а не просто робота. Я постійно вдосконалюю техніку та стежу за сучасними трендами, поєднуючи їх із класичними прийомами барберингу. Для мене важливо не просто зробити стрижку, а створити образ, який пасуватиме саме вам. Приходьте — знайдемо стиль, у якому ви відчуватимете себе впевнено.»</p>
+                       <div class="barber-rating">
+                           <span class="stars">★★★★★</span>
+                           <br>2 відгуки
+                       </div>
+                   </div>
+
+                   <div class="barber-card">
+                       <div class="barber-avatar"><img src="sasha.JPG" alt="Олександр" loading="lazy"></div>
+                       <div class="barber-name">Олександр</div>
+                       <div class="barber-title">Razor Boss</div>
+                       <div class="barber-experience">Досвід 5 років</div>
+                       <p class="barber-skills">Стрижка будь-якої довжини, моделювання бороди, гоління.</p>
+                       <p class="barber-bio">«Моя майстерність у стрижці і догляді за волоссям — це моє мистецтво, і я вкладаю в неї всю свою душу. Я прагну, щоб кожен мій клієнт виглядав і відчував себе найкращим. Не соромтеся запитувати поради щодо вашого образу — я завжди готовий допомогти створити стиль, в якому ви будете почувати себе впевнено і комфортно.»</p>
+                       <div class="barber-rating">
+                           <span class="stars">★★★★★</span>
+                           <br>22 відгуки
+                       </div>
+                   </div>
+
+                   <div class="barber-card">
+                       <div class="barber-avatar"><img src="vili.JPG" alt="Вільям" loading="lazy"></div>
+                       <div class="barber-name">Вільям</div>
+                       <div class="barber-title">Fade maestro</div>
+                       <div class="barber-experience">Досвід понад 3 роки</div>
+                       <p class="barber-bio">«Привіт, я — Вільям, fade maestro в Old School 💈 Заряджений енергією і позитивом, займаюсь професійним спортом та залюбки підтримаю розмову із Вами! Кожна моя стрижка — це поєднання стилю, впевненості та турботи! Допоможу підібрати зачіску, правильний догляд за волоссям та відповім на усі Ваші запитання 😉»</p>
+                       <div class="barber-rating">
+                           <span class="stars">★★★★★</span>
+                           <br>26 відгуків
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- CTA Section: Choose Your Barber -->
+       <section class="cta">
+           <div class="container">
+               <h2>Обери свого барбера</h2>
+               <p>Кожен майстер має свій стиль. Оберіть того, хто найкраще зрозуміє ваш образ, і запишіться на зручний час.</p>
+               <a href="#"><button class="btn-primary ms_booking">Записатись</button></a>
+           </div>
+       </section>
+
+       <!-- Portfolio Section -->
+       <section class="portfolio" id="portfolio">
+           <div class="container">
+               <h2 class="section-title">НАШІ <span class="gold">РОБОТИ</span></h2>
+               <p class="section-subtitle">ПОРТФОЛІО ПРОФЕСІЙНИХ РОБІТ МАЙСТРІВ</p>
+               <div class="portfolio-gallery">
+                   <div class="portfolio-item">
+                       <img loading="lazy" src="Photo/IMG_9161.jpg" alt="Стрижка з бородою">
+                       <div class="portfolio-overlay">
+                           <p>Стрижка з Бородою</p>
+                       </div>
+                   </div>
+
+                   <div class="portfolio-item">
+                       <img loading="lazy" src="Photo/IMG_9162.jpg" alt="Класична стрижка">
+                       <div class="portfolio-overlay">
+                           <p>Класична Стрижка</p>
+                       </div>
+                   </div>
+
+                   <div class="portfolio-item">
+                       <img loading="lazy" src="Photo/IMG_9164.jpg" alt="Сучасна укладка">
+                       <div class="portfolio-overlay">
+                           <p>Сучасна Укладка</p>
+                       </div>
+                   </div>
+
+                   <div class="portfolio-item">
+                       <img loading="lazy" src="Photo/IMG_9165.jpg" alt="Оформлення">
+                       <div class="portfolio-overlay">
+                           <p>Оформлення</p>
+                       </div>
+                   </div>
+
+                   <div class="portfolio-item">
+                       <img loading="lazy" src="Photo/IMG_9166.jpg" alt="Премиум стрижка">
+                       <div class="portfolio-overlay">
+                           <p>Премиум Стрижка</p>
+                       </div>
+                   </div>
+
+                   <div class="portfolio-item">
+                       <img loading="lazy" src="Photo/IMG_9167.jpg" alt="Фадес">
+                       <div class="portfolio-overlay">
+                           <p>Фадес</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+
+       <!-- Testimonials Section -->
+       <section class="testimonials">
+           <div class="container">
+               <div class="testimonials-header">
+                   <span class="label">Відгуки</span>
+                   <h2>Що кажуть люди</h2>
+               </div>
+               <div class="reviews-grid">
+                   <div class="review-card">
+                       <div class="review-header">
+                           <div class="review-avatar">👤</div>
+                           <div class="review-author">
+                               <div class="review-name">Vlad Duz</div>
+                               <div class="review-rating">★★★★★ 2 відгуки</div>
+                           </div>
+                       </div>
+                       <div class="review-text">Отличный барбершоп! Атмосфера на высоте, сразу чувствуешь себя комфортно. Мастер — настоящий профессионал, выслушал все пожелания, подсказал, как лучше сделать форму бороды и стрижку под мой тип лица. Результат превзошел ожидания!</div>
+                   </div>
+
+                   <div class="review-card">
+                       <div class="review-header">
+                           <div class="review-avatar">👤</div>
+                           <div class="review-author">
+                               <div class="review-name">Данiїл Майдебуров</div>
+                               <div class="review-rating">★★★★★ 2 відгуки</div>
+                           </div>
+                       </div>
+                       <div class="review-text">Лучшее место для красивой стрижки. Внутри приятная атмосфера, всегда предлагают кофе или напитки. Стригут красиво и всегда точно так как я прошу. Прихожу уже не первый раз, всегда ухожу довольный, всем рекомендую!</div>
+                   </div>
+
+                   <div class="review-card">
+                       <div class="review-header">
+                           <div class="review-avatar">👤</div>
+                           <div class="review-author">
+                               <div class="review-name">Мараt Пономарев</div>
+                               <div class="review-rating">★★★★★ 18 відгуків</div>
+                           </div>
+                       </div>
+                       <div class="review-text">Отличный барбер, профессионал своего дела. Каждый раз стрижка супер, атмосфера на высоте! Рекомендую всем!</div>
+                   </div>
+
+                   <div class="review-card">
+                       <div class="review-header">
+                           <div class="review-avatar">👤</div>
+                           <div class="review-author">
+                               <div class="review-name">Andrey Guk</div>
+                               <div class="review-rating">★★★★★ 10 відгуків</div>
+                           </div>
+                       </div>
+                       <div class="review-text">Очень крутые мастера! Понравился подход и как мастер видит твой стиль. Результат превзошел ожидания — все четко и быстро!</div>
+                   </div>
+
+                   <div class="review-card">
+                       <div class="review-header">
+                           <div class="review-avatar">👤</div>
+                           <div class="review-author">
+                               <div class="review-name">Valerii</div>
+                               <div class="review-rating">★★★★★ 2 відгуки</div>
+                           </div>
+                       </div>
+                       <div class="review-text">Все супер. Мастера одни из лучших в Киеве. Цены адекватные. Мастер всегда так как я прошу — точно, чисто и со вкусом!</div>
+                   </div>
+
+                   <div class="review-card">
+                       <div class="review-header">
+                           <div class="review-avatar">👤</div>
+                           <div class="review-author">
+                               <div class="review-name">EnergyBarro</div>
+                               <div class="review-rating">★★★★★ 1 відгук</div>
+                           </div>
+                       </div>
+                       <div class="review-text">Стрижка топ, мастера супер! Профессиональный подход, чистота и качество на высшем уровне. Обязательно вернусь!</div>
+                   </div>
+
+                   <div class="review-card">
+                       <div class="review-header">
+                           <div class="review-avatar">👤</div>
+                           <div class="review-author">
+                               <div class="review-name">саша кривич</div>
+                               <div class="review-rating">★★★★★ 6 відгуків</div>
+                           </div>
+                       </div>
+                       <div class="review-text">Просто пушка!!! Лучший барбер в городе, атмосфера супер, всегда помощь и уважение. Рекомендую всем своим друзьям!</div>
+                   </div>
+
+                   <div class="review-card">
+                       <div class="review-header">
+                           <div class="review-avatar">👤</div>
+                           <div class="review-author">
+                               <div class="review-name">Maks</div>
+                               <div class="review-rating">★★★★★ 1 відгук</div>
+                           </div>
+                       </div>
+                       <div class="review-text">Качественный сервис, приятная атмосфера и вкусный кофе. Мастера знают свое дело, всегда помогут с выбором стиля. Отличное место!</div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- CTA Section -->
+       <section class="cta" id="book">
+           <div class="container">
+               <h2>Готові до нової стрижки?</h2>
+               <p>Приходьте без запису або запишіться заранее. Відчуйте різницю Old School.</p>
+               <a href="#"><button class="btn-primary ms_booking">Записатись</button></a>
+           </div>
+       </section>
+
+       <!-- Map Section -->
+       <section class="map-section">
+           <div class="map-container">
+               <div class="map-wrapper">
+                   <div class="map">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.7583583329083!2d30.459238487316377!3d50.37106011980171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8f79cd82c3b%3A0xe7dda873638d01a1!2z0L_RgNC-0YHQvy4g0JDQutCw0LTQtdC80LjQutCwINCT0LvRg9GI0LrQvtCy0LAsIDnQkiwg0JrQuNC10LIsIDAzMTg3!5e0!3m2!1sru!2sua!4v1761644637076!5m2!1sru!2sua"
+                               width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                               referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                   </div>
+               </div>
+               <div class="map-info">
+                   <h2>Знайдіть Нас</h2>
+                   <div class="contact-box">
+                       <div class="contact-item">
+                           <span class="contact-icon">📍</span>
+                           <div>
+                               <h4>Адреса</h4>
+                               <p>пр. Академіка Глушкова, 9<br>Київ, 02000</p>
+                           </div>
+                       </div>
+                       <div class="contact-item">
+                           <span class="contact-icon">📞</span>
+                           <div>
+                               <h4>Телефон</h4>
+                               <p><a href="tel:+380441234567">(044) 123-4567</a></p>
+                           </div>
+                       </div>
+                       <div class="contact-item">
+                           <span class="contact-icon">⏰</span>
+                           <div>
+                               <h4>Режим Роботи</h4>
+                               <p>Пн-Пт: 9:00-21:00<br>Сб-Нд: 10:00-18:00</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Footer -->
+       <footer id="contact">
+           <div class="footer-content">
+               <div class="footer-section">
+                   <p>Класичні стрижки. Справжні барбери. Без компромісів.</p>
+                   <div class="social-links">
+                       <a href="#" title="Instagram">📷</a>
+                       <a href="#" title="Facebook">f</a>
+                       <a href="#" title="Twitter">𝕏</a>
+                   </div>
+               </div>
+
+               <div class="footer-section">
+                   <h3>Швидкі Посилання</h3>
+                   <a href="#services">Послуги</a>
+                   <a href="#about">Про Нас</a>
+                   <a href="#gallery">Галерея</a>
+                   <a href="#contact">Контакти</a>
+               </div>
+
+               <div class="footer-section">
+                   <h3>Контактна Інформація</h3>
+                   <p>📍 вул. Барбера, 123<br>Київ, 02000</p>
+                   <p>📞 (044) 123-4567</p>
+                   <p>✉️ info@oldschool-barber.com</p>
+               </div>
+
+               <div class="footer-section">
+                   <h3>Режим Роботи</h3>
+                   <p>Пн - Пт: 9:00 - 21:00<br>
+                       Сб - Нд: 10:00 - 18:00<br>
+                       Вихідні: святкові дні</p>
+               </div>
+           </div>
+
+           <div class="footer-bottom">
+               <p>&copy; 2024 Old School Barber. Усі права захищені.</p>
+           </div>
+       </footer>
+
+
+
+   </div>
+    <script>
+        // ===== HERO VIDEO - Mouse control with Parallax & Scale Animation =====
+        const hero = document.querySelector('.hero');
+        const heroVideoWrapper = document.querySelector('.hero-video-wrapper');
+        const canvas = document.getElementById('heroCanvas');
+        const video = document.getElementById('heroVideo');
+        // willReadFrequently is for getImageData-heavy usage (forces software rendering) —
+        // this canvas only does drawImage, so keep it GPU-accelerated.
+        const ctx = canvas.getContext('2d', { willReadFrequently: false, alpha: false });
+
+        // Parallax & Scale animation state
+        let scrollY = 0;
+        let scaleValue = 1;
+        let lastScaleTime = Date.now();
+
+        // ===== SCROLL PARALLAX EFFECT =====
+        const navEl = document.querySelector('nav');
+        function updateNavBackground() {
+            navEl.classList.toggle('nav-scrolled', window.scrollY > 60);
+        }
+        window.addEventListener('scroll', () => {
+            scrollY = window.scrollY;
+            updateNavBackground();
+        });
+        updateNavBackground();
+
+        // ===== MOBILE NAV TOGGLE =====
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        navToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('open');
+            navToggle.classList.toggle('open', isOpen);
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                navToggle.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // ===== MOBILE HERO CHAIR VIDEO + SCROLL ANIMATION =====
+        // Dedicated portrait video for mobile instead of the heavy desktop
+        // canvas/video pipeline. Source is only attached on mobile widths so
+        // desktop never fetches it (element is display:none there anyway).
+        const heroChairMobile = document.getElementById('heroChairMobile');
+        if (heroChairMobile && window.innerWidth <= 768) {
+            const chairSource = heroChairMobile.querySelector('source');
+            if (chairSource && chairSource.dataset.src) {
+                chairSource.src = chairSource.dataset.src;
+                heroChairMobile.load();
+                heroChairMobile.play().catch(() => {});
+            }
+
+            let chairTicking = false;
+            const updateChairTransform = () => {
+                const heroRect = hero.getBoundingClientRect();
+                const progress = Math.min(Math.max(-heroRect.top / heroRect.height, 0), 1);
+                const translateY = progress * 60; // px of drift while scrolling past hero
+                const scale = 1 + progress * 0.08;
+                heroChairMobile.style.transform = `translateY(${translateY}px) scale(${scale})`;
+                chairTicking = false;
+            };
+            window.addEventListener('scroll', () => {
+                if (!chairTicking) {
+                    requestAnimationFrame(updateChairTransform);
+                    chairTicking = true;
+                }
+            }, { passive: true });
+        }
+
+        // ===== LAZY-PLAY ABOUT VIDEO (295MB source — only fetch when visible) =====
+        const aboutVideo = document.getElementById('aboutVideo');
+        if (aboutVideo) {
+            const aboutVideoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        aboutVideo.load();
+                        aboutVideo.play().catch(() => {});
+                        aboutVideoObserver.unobserve(aboutVideo);
+                    }
+                });
+            }, { rootMargin: '200px' });
+            aboutVideoObserver.observe(aboutVideo);
+        }
+
+        // ===== SCALE BREATHING ANIMATION (1 → 1.02 → 1) =====
+        function animateScale() {
+            const elapsed = (Date.now() - lastScaleTime) % 8000; // 8 second cycle
+            const progress = elapsed / 8000;
+
+            // Smooth scale: 1 → 1.02 (first half) → 1 (second half)
+            if (progress < 0.5) {
+                scaleValue = 1 + (progress * 2) * 0.02; // 0 to 0.02
+            } else {
+                scaleValue = 1.02 - ((progress - 0.5) * 2) * 0.02; // 0.02 to 0
+            }
+        }
+
+        // Set video source based on screen resolution
+        function setVideoSource() {
+            if (window.innerWidth <= 768) {
+                // Hero video is hidden on mobile (CSS), skip loading it to save bandwidth
+                return;
+            }
+
+            const videoSource = video.querySelector('source');
+            const newSrc = '123.mp4';
+
+            if (videoSource.src !== newSrc) {
+                videoSource.src = newSrc;
+                console.log('Setting video source to:', newSrc, 'Screen width:', window.innerWidth);
+                video.load();
+
+                // Try to play the video
+                const playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(error => {
+                        console.log('Autoplay failed:', error);
+                    });
+                }
+            }
+        }
+
+        // Set initial source
+        setVideoSource();
+        console.log('Hero video initialized, source:', video.querySelector('source').src);
+
+        // Update on window resize
+        window.addEventListener('resize', () => {
+            setVideoSource();
+        });
+
+        let isVideoLoaded = false;
+        let isHeroActive = false;
+
+        // Set canvas size with pixel density for high quality
+        function resizeCanvas() {
+            const dpr = window.devicePixelRatio || 1;
+            const rect = hero.getBoundingClientRect();
+            canvas.width = rect.width * dpr;
+            canvas.height = rect.height * dpr;
+            ctx.scale(dpr, dpr);
+        }
+
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Load video and draw first frame
+        video.addEventListener('loadedmetadata', () => {
+            isVideoLoaded = true;
+            video.currentTime = 0;
+            console.log('Video loaded:', video.src, 'Duration:', video.duration, 'Width:', video.videoWidth, 'Height:', video.videoHeight);
+
+            // On mobile, show video element directly instead of canvas
+            if (window.innerWidth <= 768) {
+                canvas.style.opacity = '0';
+                canvas.style.pointerEvents = 'none';
+                video.style.position = 'absolute';
+                video.style.inset = '0';
+                video.style.width = '100%';
+                video.style.height = '100%';
+                video.style.zIndex = '0';
+                video.style.opacity = '1';
+                video.style.visibility = 'visible';
+                video.style.objectFit = 'cover';
+                console.log('Mobile mode: showing video directly');
+            } else {
+                drawFrame();
+                console.log('Desktop mode: using canvas');
+            }
+        });
+
+        video.addEventListener('error', (e) => {
+            console.error('Video loading error:', e.target.error);
+            // On error, show video element with gradient background
+            canvas.style.opacity = '0';
+            canvas.style.pointerEvents = 'none';
+            video.style.opacity = '1';
+            video.style.visibility = 'visible';
+        });
+
+        // Fallback: if video hasn't loaded after 3 seconds, show gradient background
+        setTimeout(() => {
+            if (!isVideoLoaded) {
+                console.log('Video timeout - showing gradient fallback');
+                canvas.style.opacity = '0';
+                canvas.style.pointerEvents = 'none';
+                if (window.innerWidth <= 768) {
+                    video.style.opacity = '1';
+                    video.style.visibility = 'visible';
+                }
+            }
+        }, 3000);
+
+        function drawFrame() {
+            if (isVideoLoaded && video.videoWidth > 0) {
+                const rect = hero.getBoundingClientRect();
+                ctx.drawImage(video, 0, 0, rect.width, rect.height);
+            }
+        }
+
+        // Track if mouse is over hero
+        hero.addEventListener('mouseenter', () => {
+            isHeroActive = true;
+        });
+
+        // Smooth video scrubbing with parallax and scale animation
+        let targetTime = 0;
+        let animationFrameId = null;
+        let isHovering = false;
+        let seekFrameCounter = 0;
+
+        function smoothUpdate() {
+            if (!isVideoLoaded) {
+                animationFrameId = requestAnimationFrame(smoothUpdate);
+                return;
+            }
+
+            // ===== PARALLAX & SCALE ANIMATION =====
+            animateScale();
+
+            // Apply parallax (y translation) + scale breathing animation
+            const parallaxY = scrollY * 0.5; // 50% of scroll
+            const transform = `translateY(${parallaxY}px) scale(${scaleValue})`;
+            canvas.style.transform = transform;
+
+            // ===== VIDEO SCRUBBING LERP =====
+            // Ultra-smooth lerp with adaptive easing
+            const diff = Math.abs(targetTime - video.currentTime);
+            let lerpFactor;
+
+            if (diff > 2) {
+                // Large jump: moderate speed (0.06)
+                lerpFactor = 0.06;
+            } else if (diff > 0.5) {
+                // Medium difference: slower (0.04)
+                lerpFactor = 0.04;
+            } else if (diff > 0.05) {
+                // Small difference: very slow (0.02)
+                lerpFactor = 0.02;
+            } else {
+                // Minimal difference: ultra-fine (0.01)
+                lerpFactor = 0.01;
+            }
+
+            // Setting video.currentTime triggers a real decoder seek, which is expensive —
+            // doing it on every rAF (60/s) is what causes stutter. Throttle the actual seeks
+            // to ~30/s, but repaint the canvas every frame so motion still looks continuous.
+            seekFrameCounter++;
+            if (seekFrameCounter % 2 === 0) {
+                video.currentTime += (targetTime - video.currentTime) * lerpFactor;
+            }
+            drawFrame();
+
+            animationFrameId = requestAnimationFrame(smoothUpdate);
+        }
+
+        // Canvas/video scrubbing loop is desktop-only work (hidden on mobile via CSS
+        // and never loaded there) — don't run the rAF loop at all on mobile.
+        if (window.innerWidth > 768) {
+            smoothUpdate();
+        }
+
+        // Mouse position controls video playback
+        // Only apply mouse scrubbing on desktop (> 768px)
+        if (window.innerWidth > 768) {
+            document.addEventListener('mousemove', (e) => {
+                if (!isVideoLoaded) return;
+
+                const rect = hero.getBoundingClientRect();
+                const mouseY = e.clientY - rect.top;
+                const mouseX = e.clientX - rect.left;
+
+                // Check if completely outside hero vertically (above or below)
+                if (mouseY < 0 || mouseY > rect.height) {
+                    targetTime = 0;
+                    return;
+                }
+
+                // Check if outside hero horizontally
+                if (mouseX < 0 || mouseX > rect.width) {
+                    return;
+                }
+
+                // Update video position based on horizontal cursor position
+                const progress = Math.max(0, Math.min(1, mouseX / rect.width));
+                targetTime = progress * video.duration;
+            });
+        } else {
+            // Mobile: just play the video normally
+            video.play().catch(() => {
+                // Autoplay failed, that's ok
+            });
+        }
+
+        // ===== PAGE SCROLL HANDLER =====
+        let heroTextRuAll = document.querySelectorAll('.hero-text-ru h2');
+        let heroTextEn = document.querySelector('.hero-text-en p');
+        let heroButton = document.querySelector('.hero-buttons .btn-primary');
+
+        // Trigger animation immediately on load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                heroTextRuAll.forEach(el => el.classList.add('visible'));
+                if (heroTextEn) heroTextEn.classList.add('visible');
+                if (heroButton) heroButton.classList.add('visible');
+            }, 300);
+        });
+
+        // Also trigger on DOMContentLoaded if load hasn't fired yet
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                heroTextRuAll.forEach(el => {
+                    if (!el.classList.contains('visible')) {
+                        el.classList.add('visible');
+                    }
+                });
+                if (heroTextEn && !heroTextEn.classList.contains('visible')) {
+                    heroTextEn.classList.add('visible');
+                }
+                if (heroButton && !heroButton.classList.contains('visible')) {
+                    heroButton.classList.add('visible');
+                }
+            }, 300);
+        });
+
+        window.addEventListener('scroll', () => {
+            scrollY = window.scrollY;
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ===== SCROLL ANIMATIONS =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const element = entry.target;
+
+                    // Determine animation type based on class
+                    if (element.classList.contains('service-card')) {
+                        element.classList.add('active');
+                    } else if (element.classList.contains('section-title')) {
+                        element.classList.add('active');
+                    } else if (element.classList.contains('feature-item')) {
+                        element.classList.add('active');
+                    } else if (element.classList.contains('pricing-item')) {
+                        element.classList.add('active');
+                    } else if (element.classList.contains('stat-item')) {
+                        element.classList.add('active-scale');
+                    } else if (element.classList.contains('team-card')) {
+                        element.classList.add('active');
+                    } else if (element.classList.contains('review-card')) {
+                        element.classList.add('active');
+                    }
+
+                    observer.unobserve(element);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.service-card, .section-title, .feature-item, .pricing-item, .stat-item, .team-card, .review-card').forEach(element => {
+            element.classList.add('scroll-animate');
+            observer.observe(element);
+        });
+    </script>
+    <script type="text/javascript" src="https://w1394531.alteg.io/widgetJS" charset="UTF-8"></script>
+    <script>
+        (() => {
+            // --- ЗАХАРДКОДЬ тут режим для каждой конкретной страницы ---
+            // На barber странице: const PAGE_MODE = 'barber';
+            // На manicure странице: const PAGE_MODE = 'manicure';
+            const PAGE_MODE = 'barber'; // <-- Поменяй на 'manicure' на соответствующей странице
+
+            const toggle = document.getElementById('site-toggle');
+            const paths = {
+                barber: '../index.html',           // куда вести при barber
+                manicure: './manicure/index.html',  // куда вести при manicure
+            };
+
+            function syncUI() {
+                if (!toggle) return;
+                toggle.checked = PAGE_MODE === 'manicure';
+            }
+
+            function goTo(mode) {
+                const target = mode === 'manicure' ? paths.manicure : paths.barber;
+                // replace — чтобы не создавать новую запись в истории
+                location.replace(target);
+            }
+
+            // init при загрузке или при возврате из bfcache
+            function init() {
+                syncUI();
+            }
+
+            if (toggle) {
+                toggle.addEventListener('change', () => {
+                    const next = toggle.checked ? 'manicure' : 'barber';
+                    goTo(next);
+                });
+            }
+
+            // срабатывает при навигации назад/вперёд (включая bfcache)
+            window.addEventListener('pageshow', init);
+
+            // первичный запуск
+            init();
+        })();
+    </script>
+    <script>
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+
+        // функция для скрытия прелоадера
+        function hidePreloader() {
+            preloader.style.opacity = "0";
+            setTimeout(() => {
+                preloader.style.display = "none";
+                content.style.display = "block";
+                content.classList.add("fade-in");
+            }, 600);
+        }
+
+        // ждём, когда всё загрузится
+        window.addEventListener("load", async () => {
+            // 1️⃣ ждём картинки (включая фоны)
+            await new Promise(resolve => {
+                imagesLoaded(document.body, {background: true}, resolve);
+            });
+
+            // 2️⃣ ждём шрифты
+            if (document.fonts) {
+                await document.fonts.ready;
+            }
+
+            // 3️⃣ минимальное время показа прелоадера (например, 1500 мс)
+            const minTime = new Promise(resolve => setTimeout(resolve, 1500));
+
+            await minTime;
+
+            // 4️⃣ скрываем прелоадер
+            setTimeout(()=>{
+                hidePreloader();
+            },200)
+        });
+    </script>
+</body>
+</html>
