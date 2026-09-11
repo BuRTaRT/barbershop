@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old School Barbershop — Классический барберинг</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+</head>
+<body>
+<!-- Navigation -->
+<div id="preloader">
+    <dotlottie-player
+            src="./Barber.json"
+            speed="1"
+            style="width: 500px; height: 500px;"
+            loop
+            autoplay>
+    </dotlottie-player>
+</div>
+<div class="content" id="content">
+    <nav>
+        <div class="container">
+            <button class="nav-toggle" id="navToggle" aria-label="Меню" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#about">Про Нас</a></li>
+                <li><a href="#portfolio">Роботи</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="#" class="nav-book ms_booking">Записатись</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section — упрощённый, работает на iOS Safari -->
+    <section class="hero">
+        <div class="toggle-wrapper hero-toggle">
+            <a href="#" class="toggle-option left">Барбершоп</a>
+            <div class="toggle-button">
+                <input type="checkbox" id="site-toggle">
+                <label for="site-toggle"></label>
+            </div>
+            <a href="./manicure/index.html" class="toggle-option right">Манікюр</a>
+        </div>
+        <video
+                class="hero-bg-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                webkit-playsinline
+                preload="auto"
+        >
+            <source src="123-2.mp4" type="video/mp4" media="(min-width: 769px)">
+            <source src="mobilzero_pingpong.mp4" type="video/mp4" media="(max-width: 768px)">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content hero-left">
+            <div class="hero-tagline">
+                <p class="tagline-main">СТРИЖЕМ, ЯК КОЛИСЬ. ЖИВЕМ, ЯК ЛЕГЕНДИ.</p>
+                <p class="tagline-en">Cut like old times. Live like legends.</p>
+            </div>
+        </div>
+
+        <div class="hero-buttons-bottom">
+            <a href="#" class="ms_booking">
+                <button class="btn-primary">Записатись</button>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Services Section (не трогаем — вы переделаете) -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">ПОПУЛЯРНІ <span class="gold">ПОСЛУГИ</span></h2>
+            <p class="section-subtitle">ПРОФЕСІЙНИЙ ДОГЛЯД ДЛЯ СПРАВЖНІХ ЧОЛОВІКІВ</p>
+        </div>
+        <div class="services-stage">
+            <img src="services.png" alt="" class="services-bg" loading="lazy">
+            <img src="services-mob.png" alt="" class="services-bg-mob" loading="lazy">
+            <div class="services-buttons-bottom">
+                <a href="#" class="ms_booking">
+                    <button class="btn-primary">Записатись</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section — упрощённое видео без lazy-load -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-image">
+                <video
+                        class="about-video"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        webkit-playsinline
+                        preload="metadata"
+                >
+                    <source src="video.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <div class="about-text">
+                <h2>Традиція. Пристрасть. Досконалість.</h2>
+                <p>У Old School Barber ми вірим, що чудова стрижка - це не просто послуга, а досвід. Наші барбери
+                    поєднують традиційні техніки з сучасним стилем, щоб дати вам гострі образи та вічну впевненість.</p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4>Досвідчені Барбери</h4>
+                        <p>Багаторічний досвід в класичних та сучасних техніках барберингу</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Преміальні Засоби</h4>
+                        <p>Тільки найкращі засоби для ваших волосся та шкіри</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Розслаблена Атмосфера</h4>
+                        <p>Безплатні напитки та вінтажний дизайн</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>100% Задоволення</h4>
+                        <p>Гарантована якість з особливою увагою до деталей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <span class="label">Прайс-лист</span>
+                <h2>Переглянути наш прайс барбера</h2>
+            </div>
+            <div class="pricing-grid">
+                <div>
+                    <h3 class="pricing-column-title">Окремі послуги</h3>
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Стрижка машинкою</h3>
+                            <p>Використовується від двох насадок та тример, рівномірно стрижуть волосся по всій голові,
+                                регулюючи довжину для плавного переходу між зонами.</p>
+                        </div>
+                        <div class="pricing-item-price">350 – 800 ₴</div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Стрижка бороди</h3>
+                            <p>Моделювання бороди вибір форми відповідно до рис обличчя, розпарювання обличчя, гарячим
+                                рушником для підготовки шкіри, гоління шаветкою з використанням одноразового леза для
+                                точності та гігієни. Застосування спеціальних засобів для заспокоєння шкіри, побажання
+                                укладання бороди для більш точної форми за допомогою бальзамів або олій.</p>
+                        </div>
+                        <div class="pricing-item-price">400 – 700 ₴</div>
+                    </div>
+
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Стрижка</h3>
+                            <p>Стрижка за допомогою всього інструменту майстра, визначаємо бажану довжину та стиль який
+                                підходить під обличчя і форму голови.</p>
+                        </div>
+                        <div class="pricing-item-price">400 – 900 ₴</div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Подовжена стрижка</h3>
+                            <p>Стрижка з використанням ножиць та окантовочних машинок, від 6 см на скронях і потиличній
+                                зоні.</p>
+                        </div>
+                        <div class="pricing-item-price">900 – 1 100 ₴</div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Гоління голови або лиця</h3>
+                            <p>Класичне гоління звичайною бритвою з гарячим рушником.</p>
+                        </div>
+                        <div class="pricing-item-price">350 – 800 ₴</div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Дитяча стрижка</h3>
+                            <p>Від 5ти до 10ти років</p>
+                        </div>
+                        <div class="pricing-item-price">500 – 700 ₴</div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="pricing-column-title">Комплексні пропозиції</h3>
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Full Gentelman Service</h3>
+                            <p>Преміальний ритуал догляду для чоловіка. Стрижка та моделювання бороди поєднуються з
+                                глибокм очищенням шкіри голови преміум-засобами Luxina. Розпарювання обличчя з
+                                аромамаслами, скраб, чорна маска та патчі під очі забезпечують повне онновлення шкіри й
+                                відчуття справжнього барбер-SPA.</p>
+                        </div>
+                        <div class="pricing-item-price">1 600 – 1 800 ₴</div>
+                    </div>
+
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Стрижка + Оформлення</h3>
+                            <p>Комплекс: стрижка та оформлення бороди в одному сеансі.</p>
+                        </div>
+                        <div class="pricing-item-price">1,200 ₴</div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Повний комплекс</h3>
+                            <p>Стрижка, оформлення бороди та гоління з гарячим рушником.</p>
+                        </div>
+                        <div class="pricing-item-price">1,500 ₴</div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-item-left">
+                            <h3>Спеціальна послуга</h3>
+                            <p>Індивідуальний підхід до кожного клієнта барбера.</p>
+                        </div>
+                        <div class="pricing-item-price">від 1,000 ₴</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Років</div>
+                <div class="stat-description">досвіду в професії</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Задоволених</div>
+                <div class="stat-description">клієнтів</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Професійних</div>
+                <div class="stat-description">барберів</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Задоволення</div>
+                <div class="stat-description">клієнтів</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team">
+        <div class="container">
+            <div class="team-header">
+                <span class="label">Команда</span>
+                <h2>Наші барбери</h2>
+            </div>
+            <div class="team-grid">
+                <div class="barber-card">
+                    <div class="barber-avatar"><img src="kol.jpg" alt="Микола" loading="lazy"></div>
+                    <div class="barber-name">Микола</div>
+                    <div class="barber-title">Cut Master</div>
+                    <div class="barber-experience">Досвід 6 років</div>
+                    <p class="barber-skills">Класичні та сучасні чоловічі стрижки, фейд, стайлінг.</p>
+                    <p class="barber-bio">«Стрижка для мене — справжня пристрасть, а не просто робота. Я постійно
+                        вдосконалюю техніку та стежу за сучасними трендами, поєднуючи їх із класичними прийомами
+                        барберингу. Для мене важливо не просто зробити стрижку, а створити образ, який пасуватиме саме
+                        вам.»</p>
+                    <div class="barber-rating">
+                        <span class="stars">★★★★★</span><br>2 відгуки
+                    </div>
+                </div>
+
+                <div class="barber-card">
+                    <div class="barber-avatar"><img src="sasha.JPG" alt="Олександр" loading="lazy"></div>
+                    <div class="barber-name">Олександр</div>
+                    <div class="barber-title">Razor Boss</div>
+                    <div class="barber-experience">Досвід 5 років</div>
+                    <p class="barber-skills">Стрижка будь-якої довжини, моделювання бороди, гоління.</p>
+                    <p class="barber-bio">«Моя майстерність у стрижці і догляді за волоссям — це моє мистецтво, і я
+                        вкладаю в неї всю свою душу. Я прагну, щоб кожен мій клієнт виглядав і відчував себе
+                        найкращим.»</p>
+                    <div class="barber-rating">
+                        <span class="stars">★★★★★</span><br>22 відгуки
+                    </div>
+                </div>
+
+                <div class="barber-card">
+                    <div class="barber-avatar"><img src="vili.JPG" alt="Вільям" loading="lazy"></div>
+                    <div class="barber-name">Вільям</div>
+                    <div class="barber-title">Fade maestro</div>
+                    <div class="barber-experience">Досвід понад 3 роки</div>
+                    <p class="barber-bio">«Привіт, я — Вільям, fade maestro в Old School 💈 Заряджений енергією і
+                        позитивом, займаюсь професійним спортом та залюбки підтримаю розмову із Вами! Кожна моя стрижка
+                        — це поєднання стилю, впевненості та турботи!»</p>
+                    <div class="barber-rating">
+                        <span class="stars">★★★★★</span><br>26 відгуків
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA: Choose Your Barber -->
+    <section class="cta">
+        <div class="container">
+            <h2>Обери свого барбера</h2>
+            <p>Кожен майстер має свій стиль. Оберіть того, хто найкраще зрозуміє ваш образ, і запишіться на зручний
+                час.</p>
+            <a href="#" class="ms_booking">
+                <button class="btn-primary">Записатись</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">НАШІ <span class="gold">РОБОТИ</span></h2>
+            <p class="section-subtitle">ПОРТФОЛІО ПРОФЕСІЙНИХ РОБІТ МАЙСТРІВ</p>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <img loading="lazy" src="Photo/IMG_9161.jpg" alt="Стрижка з бородою">
+                    <div class="portfolio-overlay"><p>Стрижка з Бородою</p></div>
+                </div>
+                <div class="portfolio-item">
+                    <img loading="lazy" src="Photo/IMG_9162.jpg" alt="Класична стрижка">
+                    <div class="portfolio-overlay"><p>Класична Стрижка</p></div>
+                </div>
+                <div class="portfolio-item">
+                    <img loading="lazy" src="Photo/IMG_9164.jpg" alt="Сучасна укладка">
+                    <div class="portfolio-overlay"><p>Сучасна Укладка</p></div>
+                </div>
+                <div class="portfolio-item">
+                    <img loading="lazy" src="Photo/IMG_9165.jpg" alt="Оформлення">
+                    <div class="portfolio-overlay"><p>Оформлення</p></div>
+                </div>
+                <div class="portfolio-item">
+                    <img loading="lazy" src="Photo/IMG_9166.jpg" alt="Премиум стрижка">
+                    <div class="portfolio-overlay"><p>Премиум Стрижка</p></div>
+                </div>
+                <div class="portfolio-item">
+                    <img loading="lazy" src="Photo/IMG_9167.jpg" alt="Фадес">
+                    <div class="portfolio-overlay"><p>Фадес</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <span class="label">Відгуки</span>
+                <h2>Що кажуть люди</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👤</div>
+                        <div class="review-author">
+                            <div class="review-name">Vlad Duz</div>
+                            <div class="review-rating">★★★★★ 2 відгуки</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Отличный барбершоп! Атмосфера на высоте, сразу чувствуешь себя комфортно.
+                        Мастер — настоящий профессионал, выслушал все пожелания, подсказал, как лучше сделать форму
+                        бороды и стрижку под мой тип лица.
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👤</div>
+                        <div class="review-author">
+                            <div class="review-name">Данiїл Майдебуров</div>
+                            <div class="review-rating">★★★★★ 2 відгуки</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Лучшее место для красивой стрижки. Внутри приятная атмосфера, всегда
+                        предлагают кофе или напитки. Стригут красиво и всегда точно так как я прошу.
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👤</div>
+                        <div class="review-author">
+                            <div class="review-name">Мараt Пономарев</div>
+                            <div class="review-rating">★★★★★ 18 відгуків</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Отличный барбер, профессионал своего дела. Каждый раз стрижка супер,
+                        атмосфера на высоте! Рекомендую всем!
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👤</div>
+                        <div class="review-author">
+                            <div class="review-name">Andrey Guk</div>
+                            <div class="review-rating">★★★★★ 10 відгуків</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Очень крутые мастера! Понравился подход и как мастер видит твой стиль.
+                        Результат превзошел ожидания — все четко и быстро!
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👤</div>
+                        <div class="review-author">
+                            <div class="review-name">Valerii</div>
+                            <div class="review-rating">★★★★★ 2 відгуки</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Все супер. Мастера одни из лучших в Киеве. Цены адекватные. Мастер всегда
+                        так как я прошу — точно, чисто и со вкусом!
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👤</div>
+                        <div class="review-author">
+                            <div class="review-name">EnergyBarro</div>
+                            <div class="review-rating">★★★★★ 1 відгук</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Стрижка топ, мастера супер! Профессиональный подход, чистота и качество на
+                        высшем уровне. Обязательно вернусь!
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👤</div>
+                        <div class="review-author">
+                            <div class="review-name">саша кривич</div>
+                            <div class="review-rating">★★★★★ 6 відгуків</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Просто пушка!!! Лучший барбер в городе, атмосфера супер, всегда помощь и
+                        уважение. Рекомендую всем своим друзьям!
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">👤</div>
+                        <div class="review-author">
+                            <div class="review-name">Maks</div>
+                            <div class="review-rating">★★★★★ 1 відгук</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Качественный сервис, приятная атмосфера и вкусный кофе. Мастера знают свое
+                        дело, всегда помогут с выбором стиля.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="book">
+        <div class="container">
+            <h2>Готові до нової стрижки?</h2>
+            <p>Приходьте без запису або запишіться заранее. Відчуйте різницю Old School.</p>
+            <a href="#" class="ms_booking">
+                <button class="btn-primary">Записатись</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <div class="map-container">
+            <div class="map-wrapper">
+                <div class="map-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.7583583329083!2d30.459238487316377!3d50.37106011980171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8f79cd82c3b%3A0xe7dda873638d01a1!2z0L_RgNC-0YHQvy4g0JDQutCw0LTQtdC80LjQutCwINCT0LvRg9GI0LrQvtCy0LAsIDnQkiwg0JrQuNC10LIsIDAzMTg3!5e0!3m2!1sru!2sua!4v1761644637076!5m2!1sru!2sua"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="map-info">
+                <h2>Знайдіть Нас</h2>
+                <div class="contact-box">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Адреса</h4>
+                            <p>пр. Академіка Глушкова, 9<br>Київ, 02000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p><a href="tel:+380441234567">(044) 123-4567</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">⏰</span>
+                        <div>
+                            <h4>Режим Роботи</h4>
+                            <p>Пн-Пт: 9:00-21:00<br>Сб-Нд: 10:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Класичні стрижки. Справжні барбери. Без компромісів.</p>
+                <div class="social-links">
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Швидкі Посилання</h3>
+                <a href="#services">Послуги</a>
+                <a href="#about">Про Нас</a>
+                <a href="#portfolio">Роботи</a>
+                <a href="#contact">Контакти</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Контактна Інформація</h3>
+                <p>📍 проспект Академіка Глушкова, 9В</p>
+                <p>📞 +380 63 966 95 78</p>
+                <p>✉️ info@osbarber.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Режим Роботи</h3>
+                <p>Пн - Пт: 9:00 - 21:00<br>
+                    Сб - Нд: 10:00 - 18:00<br>
+                    Вихідні: святкові дні</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Old School Barber. Усі права захищені. | <a href="#">Політика конфіденційності</a> | <a
+                    href="#">Умови використання</a></p>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // ===== NAV: блюр при скролле =====
+    const navEl = document.querySelector('nav');
+    const heroVideo = document.querySelector('.hero-bg-video')
+    heroVideo.playbackRate = 0.8;
+
+    function updateNavBackground() {
+        navEl.classList.toggle('nav-scrolled', window.scrollY > 60);
+    }
+
+    window.addEventListener('scroll', updateNavBackground, {passive: true});
+    updateNavBackground();
+
+    // ===== Мобильное меню =====
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('open');
+        navToggle.classList.toggle('open', isOpen);
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('open');
+            navToggle.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // ===== Плавный скролл по якорям =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({behavior: 'smooth', block: 'start'});
+            }
+        });
+    });
+
+    // ===== Анимации появления при скролле =====
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.1, rootMargin: '0px 0px -100px 0px'});
+
+    document.querySelectorAll('.section-title, .feature-item, .pricing-item, .stat-item, .barber-card, .review-card')
+        .forEach(el => {
+            el.classList.add('scroll-animate');
+            observer.observe(el);
+        });
+
+    // ===== Фолбэк для iOS Safari: если autoplay не сработал (Low Power Mode) =====
+    // Пробуем запустить видео явно; если блокируется — ничего страшного, останется первый кадр
+    document.querySelectorAll('video[autoplay]').forEach(v => {
+        const p = v.play();
+        if (p !== undefined) {
+            p.catch(() => { /* autoplay заблокирован — оставляем как есть */
+            });
+        }
+    });
+</script>
+<script type="text/javascript" src="https://w1394531.alteg.io/widgetJS" charset="UTF-8"></script>
+<script>
+    (() => {
+        // --- ЗАХАРДКОДЬ тут режим для каждой конкретной страницы ---
+        // На barber странице: const PAGE_MODE = 'barber';
+        // На manicure странице: const PAGE_MODE = 'manicure';
+        const PAGE_MODE = 'barber'; // <-- Поменяй на 'manicure' на соответствующей странице
+
+        const toggle = document.getElementById('site-toggle');
+        const paths = {
+            barber: '../index.html',           // куда вести при barber
+            manicure: './manicure/index.html',  // куда вести при manicure
+        };
+
+        function syncUI() {
+            if (!toggle) return;
+            toggle.checked = PAGE_MODE === 'manicure';
+        }
+
+        function goTo(mode) {
+            const target = mode === 'manicure' ? paths.manicure : paths.barber;
+            // replace — чтобы не создавать новую запись в истории
+            location.replace(target);
+        }
+
+        // init при загрузке или при возврате из bfcache
+        function init() {
+            syncUI();
+        }
+
+        if (toggle) {
+            toggle.addEventListener('change', () => {
+                const next = toggle.checked ? 'manicure' : 'barber';
+                goTo(next);
+            });
+        }
+
+        // срабатывает при навигации назад/вперёд (включая bfcache)
+        window.addEventListener('pageshow', init);
+
+        // первичный запуск
+        init();
+    })();
+</script>
+<script>
+    const preloader = document.getElementById("preloader");
+    const content = document.getElementById("content");
+
+    function hidePreloader() {
+        preloader.style.opacity = "0";
+        setTimeout(() => {
+            preloader.style.display = "none";
+            content.style.display = "block";
+            content.classList.add("fade-in");
+        }, 600);
+    }
+
+    // === ОПТИМИЗИРОВАННЫЙ ВАРИАНТ ===
+    // Показываем контент сразу после загрузки DOM + минимальная задержка
+    // Не ждём все картинки — они подгрузятся позже с lazy loading
+
+    document.addEventListener("DOMContentLoaded", () => {
+        // Минимальная задержка 300-500мс для красивого отображения прелоадера
+        setTimeout(() => {
+            hidePreloader();
+        }, 1500);
+    });
+
+    // === ФОЛБЭК: если DOMContentLoaded уже сработал ===
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        setTimeout(() => {
+            hidePreloader();
+        }, 500);
+    }
+
+    // === ФОЛБЭК: если что-то пошло не так — скрываем через 3 секунды ===
+    setTimeout(() => {
+        if (preloader.style.display !== "none") {
+            hidePreloader();
+        }
+    }, 3000);
+</script>
+</body>
+</html>
