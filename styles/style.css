@@ -1137,7 +1137,7 @@ footer {
 
 .footer-section a:hover { color: var(--gold); }
 
-.social-links { display: flex; gap: 1rem; }
+.social-links { display: flex; gap: 1rem; justify-content: center  }
 
 .social-links a {
     display: inline-flex;
@@ -1290,4 +1290,236 @@ footer {
 .yButtonWave {
     border-color: var(--gold) !important;
     color: var(--gold) !important;
+}
+.massage-section {
+    padding: 100px 30px;
+    background: #11100e;
+    overflow: hidden;
+}
+
+.massage-section__inner {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 480px;
+    align-items: center;
+    gap: clamp(50px, 8vw, 110px);
+}
+
+
+/* TEXT */
+
+.massage-section__content {
+    color: #e5d5bd;
+}
+
+.massage-section__eyebrow {
+    margin-bottom: 28px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 1.4;
+}
+
+.massage-section__title {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(58px, 7vw, 92px);
+    font-weight: 700;
+    line-height: .95;
+    letter-spacing: 1px;
+}
+
+.massage-section__line {
+    width: 55px;
+    height: 1px;
+    margin: 35px 0 30px;
+
+    background: #e5d5bd;
+}
+
+.massage-section__text {
+    max-width: 500px;
+    margin: 0 0 14px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: .3px;
+}
+
+.massage-section__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    margin-top: 25px;
+    padding: 17px 24px;
+
+    border: 1px solid #e5d5bd;
+
+    color: #e5d5bd;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+
+    transition:
+            background-color .25s ease,
+            color .25s ease;
+}
+
+.massage-section__button span {
+    font-size: 18px;
+    line-height: 10px;
+    transition: transform .25s ease;
+}
+
+.massage-section__button:hover {
+    background: #e5d5bd;
+    color: #11100e;
+}
+
+.massage-section__button:hover span {
+    transform: translateX(4px);
+}
+
+
+/* IMAGE */
+
+.massage-section__visual {
+    position: relative;
+    width: 100%;
+}
+
+.massage-section__visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* DECORATIVE FRAME */
+
+.massage-section__visual::before {
+    content: "";
+
+    position: absolute;
+    inset: -12px;
+
+    border: 1px solid rgba(229, 213, 189, .28);
+
+    pointer-events: none;
+}
+
+.massage-section__visual::after {
+    content: "";
+
+    position: absolute;
+    width: 70px;
+    height: 70px;
+
+    right: -25px;
+    bottom: -25px;
+
+    border-right: 1px solid #e5d5bd;
+    border-bottom: 1px solid #e5d5bd;
+
+    pointer-events: none;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .massage-section {
+        padding: 80px 25px;
+    }
+
+    .massage-section__inner {
+        grid-template-columns: minmax(0, 1fr) 400px;
+        gap: 50px;
+    }
+
+    .massage-section__title {
+        font-size: 58px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .massage-section {
+        padding: 65px 20px;
+    }
+
+    .massage-section__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .massage-section__content {
+        text-align: center;
+    }
+
+    .massage-section__eyebrow {
+        margin-bottom: 20px;
+        font-size: 9px;
+        letter-spacing: 4px;
+    }
+
+    .massage-section__title {
+        font-size: clamp(48px, 14vw, 68px);
+        line-height: .95;
+    }
+
+    .massage-section__line {
+        margin: 27px auto 25px;
+    }
+
+    .massage-section__text {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .massage-section__button {
+        margin-top: 23px;
+        padding: 15px 20px;
+
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .massage-section__visual {
+        width: min(100%, 430px);
+        margin: 0 auto;
+    }
+
+    .massage-section__visual::before {
+        inset: -7px;
+    }
+
+    .massage-section__visual::after {
+        width: 45px;
+        height: 45px;
+
+        right: -12px;
+        bottom: -12px;
+    }
+
 }
