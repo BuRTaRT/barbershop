@@ -1327,7 +1327,6 @@ footer {
 .massage-section__title {
     margin: 0;
 
-    font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(58px, 7vw, 92px);
     font-weight: 700;
     line-height: .95;
