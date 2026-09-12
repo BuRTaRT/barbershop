@@ -51,16 +51,19 @@
             <a href="./manicure/index.html" class="toggle-option right">Манікюр</a>
         </div>
         <video
-                class="hero-bg-video"
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
+                class="hero-bg-video desktop"
+                autoplay muted loop playsinline webkit-playsinline
                 preload="auto"
-        >
-            <source src="123-2.mp4" type="video/mp4" media="(min-width: 769px)">
-            <source src="mobilzero_pingpong.mp4" type="video/mp4" media="(max-width: 768px)">
+                poster="poster-desktop.jpg">
+            <source src="123-2.mp4" type="video/mp4">
+        </video>
+
+        <video
+                class="hero-bg-video mobile"
+                autoplay muted loop playsinline webkit-playsinline
+                preload="auto"
+                poster="poster-mobile.jpg">
+            <source src="mobilzero_pingpong.mp4" type="video/mp4">
         </video>
 
         <div class="hero-overlay"></div>
@@ -109,7 +112,6 @@
                         playsinline
                         webkit-playsinline
                         preload="metadata"
-                        poster="poster-desktop.jpg"
                 >
                     <source src="video.mp4" type="video/mp4">
 

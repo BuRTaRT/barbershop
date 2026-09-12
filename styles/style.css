@@ -1522,3 +1522,9 @@ footer {
     }
 
 }
+.hero-bg-video.mobile { display: none; }
+
+@media (max-width: 768px) {
+    .hero-bg-video.desktop { display: none; }
+    .hero-bg-video.mobile  { display: block; }
+}
